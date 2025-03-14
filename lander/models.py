@@ -13,7 +13,7 @@ class BaseInternalModel(models.Model):
 
 class Product(BaseInternalModel):
     name = models.CharField(max_length=255, verbose_name="Team name")
-    emoji = models.CharField(max_length=255, verbose_name="Emoji")
+    emoji = models.CharField(max_length=255, verbose_name="Emoji", blank=True)
     video = models.FileField(upload_to="videos/", verbose_name="Video")
     regular_price = models.DecimalField(
         max_digits=10, decimal_places=2, verbose_name="Regular price"
@@ -35,6 +35,7 @@ class Testimonial(BaseInternalModel):
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, verbose_name="Product"
     )
+    content = models.TextField(verbose_name="Content")
     order = models.PositiveIntegerField(verbose_name="Order", default=0)
 
     @property
