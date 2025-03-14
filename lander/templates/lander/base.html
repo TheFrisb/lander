@@ -13,14 +13,47 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/favicon/favicon-16x16.png' %}">
     <link rel="manifest" href="{% static 'assets/favicon/site.webmanifest' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
+    <style>
+        .swiper-button-prev::after {
+            display: none;
+        }
+        .swiper-button-next::after {
+            display: none;
+        }
+    </style>
     {% block extrahead %}{% endblock extrahead %}
 
 </head>
 <body class="">
+<main class="min-h-screen {% if is_checkout %}bg-gray-50 py-12 px-4{% endif %}">
+   <div data-v-02a1a2fa="" class="fixed top-0 left-0 right-0 z-50 bg-black shadow-lg border-b border-secondary/50">
+      <!-- Main Sale Banner -->
+      <div data-v-02a1a2fa="" class="flex flex-col items-center justify-center py-1.5 text-white gap-2">
+         <div data-v-02a1a2fa="" class="flex items-center justify-between w-full max-w-6xl px-2 sm:px-4">
+            <div data-v-02a1a2fa="" class="flex items-center gap-2">
+               <span data-v-02a1a2fa="" class="text-xl sm:text-3xl font-black text-secondary"> -60% OFF </span>
+               <div data-v-02a1a2fa="" class="h-6 sm:h-8 w-px bg-white/20 mx-1 sm:mx-2"></div>
+               <span data-v-02a1a2fa="" class="text-white/90 font-medium text-xs sm:text-base">Limited Time Offer</span>
+            </div>
+            <div data-v-02a1a2fa="" class="flex items-center gap-1 font-mono bg-black/20 px-2 sm:px-3 py-1 rounded-full text-sm sm:text-base">
+               <div data-v-02a1a2fa="" class="font-bold">06</div>
+               <span data-v-02a1a2fa="" class="animate-pulse">:</span>
+               <div data-v-02a1a2fa="" class="font-bold">56</div>
+               <span data-v-02a1a2fa="" class="animate-pulse">:</span>
+               <div data-v-02a1a2fa="" class="font-bold">21</div>
+            </div>
+         </div>
+         <!-- Animated Text -->
+         <div class="relative overflow-hidden whitespace-nowrap w-full bg-black/10 h-6 border-t border-secondary/50" data-v-02a1a2fa="">
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-marquee inline-block" data-v-02a1a2fa=""><span class="inline-flex items-center gap-8" data-v-02a1a2fa=""><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">Starting from <span class="text-secondary" data-v-02a1a2fa="">$249</span></span><span class="font-medium text-xs sm:text-sm" data-v-02a1a2fa="">⚡️ Flash Sale</span></span></div>         </div>
+      </div>
+   </div>
+   <!-- Spacer to prevent content from hiding under fixed banner -->
+   {% block content %}{% endblock content %}
 
-
+</main>
 
 <script src="{% static 'js/core_v1.bundle.js' %}"></script>
 {% block scripts %}{% endblock scripts %}

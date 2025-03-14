@@ -4,8 +4,8 @@
   "description": "Frontend",
   "main": "index.js",
   "scripts": {
-    "watch-tailwind": "npx tailwindcss -i ./static/css/tailwind_input.css -o ./static/css/tailwind_output_v19.css --watch",
-    "build-tailwind": "npx tailwindcss -i ./static/css/tailwind_input.css -o ./static/css/tailwind_output_v19.css --minify",
+    "watch-tailwind": "npx tailwindcss -i ./static/css/tailwind_input.css -o ./static/css/tailwind_output_v1.css --watch",
+    "build-tailwind": "npx tailwindcss -i ./static/css/tailwind_input.css -o ./static/css/tailwind_output_v1.css --minify",
     "webpack-watch": "webpack --watch --mode development",
     "webpack-build": "webpack --mode production",
     "lint": "eslint ./src/**/*.js",
@@ -36,6 +36,7 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "marked": "^15.0.7",
-    "notyf": "^3.10.0"
+    "notyf": "^3.10.0",
+    "swiper": "^11.2.5"
   }
 }
