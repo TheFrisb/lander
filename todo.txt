@@ -1,0 +1,5 @@
+8. Order summary makes kassify link
+
+2. Select team
+3. Click on checkboxes
+4. Select team on checkout i add email

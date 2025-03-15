@@ -1,4 +1,5 @@
 import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 
 function initTestimonialSliders() {
   const testimonialSliderEl = document.querySelector(".testimonialSwiper");
@@ -8,6 +9,7 @@ function initTestimonialSliders() {
   }
 
   const testimonialSlider = new Swiper(".testimonialSwiper", {
+    modules: [Navigation, Pagination],
     loop: true,
     speed: 500,
     grabCursor: true,
