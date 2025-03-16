@@ -7,14 +7,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ page_title }}</title>
-    <link rel="preload" href="{% static 'js/core_v2.bundle.js' %}" as="script">
-    <link rel="stylesheet" href="{% static 'css/tailwind_output_v2.css' %}">
+    <link rel="preload" href="{% static 'js/core_v3.bundle.js' %}" as="script">
+    <link rel="stylesheet" href="{% static 'css/tailwind_output_v3.css' %}">
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/favicon/favicon-16x16.png' %}">
     <link rel="manifest" href="{% static 'assets/favicon/site.webmanifest' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <style>
         html {
             --container-left: 16px;
@@ -39,7 +39,7 @@
 
 </head>
 <body class=" relative">
-
+{% csrf_token %}
 <main class="min-h-screen {% if is_checkout %}bg-gray-50 py-12 px-4{% endif %}" id="mainBody">
     <a href="{{ site_settings.telegram_link }}" id="telegramIcon" class="fixed bg-primary bottom-8 w-14 h-14  rounded-full shadow-lg shadow-secondary-600/20 hover:shadow-secondary-600/40 flex items-center justify-center transform hover:scale-110 transition-all duration-200 z-30 r-4" style="right: var(--container-left)!important">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="text-blue-500">
@@ -75,7 +75,7 @@
 
 </main>
 
-<script src="{% static 'js/core_v2.bundle.js' %}"></script>
+<script src="{% static 'js/core_v3.bundle.js' %}"></script>
 {% block scripts %}{% endblock scripts %}
 </body>
 </html>

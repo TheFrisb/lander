@@ -85,14 +85,25 @@
     {% endfor %}
     </ul>
 </div>
-<div class="max-w-3xl mx-auto mb-8"><div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100"><h2 class="text-xl font-semibold text-text-dark mb-4 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> Delivery Email </h2><div class="space-y-2"><input type="email" placeholder="Enter your email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"><!--v-if--><p class="text-sm text-gray-500">Your video will be delivered to this email address</p></div></div></div>
+<div class="max-w-3xl mx-auto mb-8">
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="text-xl font-semibold text-text-dark mb-4 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg> Delivery Email </h2>
+        <div class="space-y-2">
+            <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors" id="checkoutEmailInput">
+            <p class="text-sm text-gray-500">Your video will be delivered to this email address</p>
+        </div>
+    </div>
+</div>
 <!-- Additional Options -->
 <div class="max-w-3xl mx-auto space-y-0 bg-white rounded-xl p-6 shadow-sm border border-gray-100">
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="0" data-title="Message to say">
             <div class="pt-0.5"><input type="checkbox" id="message" checked="" disabled=""
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
-            <div class="flex-1">
+                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary checkoutOption__checkbox"/></div>
+            <div class="flex-1 ">
                 <label for="message" class="flex items-center justify-between cursor-pointer">
                     <div>
                         <span class="font-medium text-text-dark">Message to say</span>
@@ -100,16 +111,16 @@
                     </div>
                     <span class="text-sm font-medium text-primary">Included</span>
                 </label>
-                <div class="my-1"><input type="text" placeholder="Happy birthday Alex"
-                                         class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"/>
+                <div class="my-1.5">
+                    <input type="text" placeholder="Happy birthday Alex" class=" checkoutOption__input w-full px-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"/>
                 </div>
             </div>
         </div>
     </div>
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="5.99" data-title="Song of choice" data-subtitle="Add your preferred song">
             <div class="pt-0.5"><input type="checkbox" id="song"
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
+                                       class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/></div>
             <div class="flex-1">
                 <label for="song" class="flex items-center justify-between cursor-pointer">
                     <div>
@@ -118,14 +129,17 @@
                     </div>
                     <span class="text-sm font-medium text-primary">$5.99</span>
                 </label>
-                <!--v-if-->
+
+                <div class="my-1.5 hidden">
+                    <input type="text" placeholder="Waka Waka" class="w-full px-4 py-2 rounded-lg border checkoutOption__input border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
+                </div>
             </div>
         </div>
     </div>
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="9.99" data-title="Photo in video" data-subtitle="Attach photo to be shown in the video">
             <div class="pt-0.5"><input type="checkbox" id="photo"
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
+                                       class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/></div>
             <div class="flex-1">
                 <label for="photo" class="flex items-center justify-between cursor-pointer">
                     <div>
@@ -134,14 +148,16 @@
                     </div>
                     <span class="text-sm font-medium text-primary">$9.99</span>
                 </label>
-                <!--v-if-->
+                <div class="my-1.5 hidden">
+                    <input type="file" accept="image/*" class="w-full px-4 py-2 rounded-lg border checkoutOption__input border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
+                </div>
             </div>
         </div>
     </div>
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="3.99" data-title="Kiss photo in video" data-subtitle="Include a kiss photo in the video">
             <div class="pt-0.5"><input type="checkbox" id="kiss"
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
+                                       class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/></div>
             <div class="flex-1">
                 <label for="kiss" class="flex items-center justify-between cursor-pointer">
                     <div>
@@ -155,9 +171,9 @@
         </div>
     </div>
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="7.99" data-title="Additional message" data-subtitle="Add extra text in the video">
             <div class="pt-0.5"><input type="checkbox" id="extraText"
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
+                                       class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/></div>
             <div class="flex-1">
                 <label for="extraText" class="flex items-center justify-between cursor-pointer">
                     <div>
@@ -166,14 +182,15 @@
                     </div>
                     <span class="text-sm font-medium text-primary">$7.99</span>
                 </label>
-                <!--v-if-->
+                <div class="my-1.5 hidden">
+                    <textarea placeholder="Nice Alek you finally got a girlfriend" rows="3" class="w-full px-4 py-2 rounded-lg border checkoutOption__input border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"></textarea>                </div>
             </div>
         </div>
     </div>
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="6.99" data-title="Express delivery" data-subtitle="Delivery under 8 hours">
             <div class="pt-0.5"><input type="checkbox" id="express"
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
+                                       class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/></div>
             <div class="flex-1">
                 <label for="express" class="flex items-center justify-between cursor-pointer">
                     <div>
@@ -187,9 +204,9 @@
         </div>
     </div>
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="9.99" data-title="Reels format" data-subtitle="Video filmed in reels format">
             <div class="pt-0.5"><input type="checkbox" id="reels"
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
+                                       class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/></div>
             <div class="flex-1">
                 <label for="reels" class="flex items-center justify-between cursor-pointer">
                     <div>
@@ -203,9 +220,9 @@
         </div>
     </div>
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="4.99" data-title="Horizontal format" data-subtitle="Video filmed in horizontal format">
             <div class="pt-0.5"><input type="checkbox" id="horizontal"
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
+                                       class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/></div>
             <div class="flex-1">
                 <label for="horizontal" class="flex items-center justify-between cursor-pointer">
                     <div>
@@ -219,9 +236,9 @@
         </div>
     </div>
     <div class="">
-        <div class="flex items-start gap-4">
+        <div class="flex items-start gap-4 checkoutOption" data-price="7.99" data-title="Professional editing" data-subtitle="Special edit from our professional video editor">
             <div class="pt-0.5"><input type="checkbox" id="professional"
-                                       class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary"/></div>
+                                       class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/></div>
             <div class="flex-1">
                 <label for="professional" class="flex items-center justify-between cursor-pointer">
                     <div>
@@ -248,17 +265,19 @@
             <div class="flex flex-col gap-1 border-b border-gray-50 py-2 last:border-b-0">
                 <div class="flex justify-between text-sm"><span class="text-gray-600">Message to say</span><span
                         class="font-medium">Included</span></div>
-                <!--v-if-->
             </div>
+            <div class="space-y-2" id="checkoutSummaryOptionsContainer">
+
             </div>
-            <!--v-if--><!--v-if--><!--v-if--><!--v-if--><!--v-if--><!--v-if--><!--v-if--><!--v-if-->
-            <div class="pt-4 mt-4 border-t border-gray-100">
-                <div class="flex justify-between"><span class="text-lg font-semibold text-text-dark">Total</span><span
-                        class="text-lg font-bold text-primary" id="checkoutTotalPrice">€{{ chosen_product.discount_price }}</span></div>
-                </div>
-                </div>
+        </div>
+    </div>
+        <div class="pt-4 mt-4 border-t border-gray-100">
+            <div class="flex justify-between"><span class="text-lg font-semibold text-text-dark">Total</span><span
+                    class="text-lg font-bold text-primary" id="checkoutTotalPrice">€{{ chosen_product.discount_price }}</span></div>
             </div>
-        <button class="w-full mt-6 bg-accent text-white py-4 rounded-lg hover:bg-accent/90 transition-colors font-medium flex items-center justify-center gap-2">
+        </div>
+        </div>
+        <button class="w-full max-w-3xl mx-auto mt-6 bg-accent text-white py-4 rounded-lg hover:bg-accent/90 transition-colors font-medium flex items-center justify-center gap-2" id="checkoutButton">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor">
                 <path
@@ -270,11 +289,8 @@
             </svg>
             Pay <span id="checkoutButtonPrice">€{{ chosen_product.discount_price }}</span>
         </button>
-        </div>
 
 
-    </div>
-</div>
 <!-- Additional bottom padding to account for the banner -->
 <div class="h-12"></div>
 

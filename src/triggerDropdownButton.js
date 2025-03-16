@@ -1,3 +1,5 @@
+import { updateCheckoutSummary } from "./checkout";
+
 function initTriggerDropdownButton() {
   const button = document.querySelector(".triggerDropdownButton");
   const chosenProductSalePrice = document.querySelector(
@@ -82,6 +84,8 @@ function initTriggerDropdownButton() {
     checkoutChosenProductName.textContent = productName;
     checkoutChosenProductSalePrice.textContent = `€${productSalePrice}`;
     checkoutBuyButtonPriceEl.textContent = `€${productSalePrice}`;
+
+    updateCheckoutSummary();
   }
 
   function updateProductPageMetadata(activeProductId, productSalePrice) {
