@@ -126,6 +126,11 @@ function updateCheckoutSummary() {
       const price = checkoutOptionEl.dataset.price;
       const title = checkoutOptionEl.dataset.title;
       const subtitle = checkoutOptionEl.dataset.subtitle;
+
+      if (price == "0") {
+        return;
+      }
+
       html += `
       <div class="flex flex-col gap-1 border-b border-gray-50 py-2 last:border-b-0">
           <div class="flex justify-between text-sm">
