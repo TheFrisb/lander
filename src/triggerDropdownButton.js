@@ -75,8 +75,13 @@ function initTriggerDropdownButton() {
       "#checkoutChosenProductSalePrice",
     );
 
+    const checkoutBuyButtonPriceEl = document.querySelector(
+      "#checkoutButtonPrice",
+    );
+
     checkoutChosenProductName.textContent = productName;
     checkoutChosenProductSalePrice.textContent = `€${productSalePrice}`;
+    checkoutBuyButtonPriceEl.textContent = `€${productSalePrice}`;
   }
 
   function updateProductPageMetadata(activeProductId, productSalePrice) {
