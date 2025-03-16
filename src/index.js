@@ -4,6 +4,7 @@ import initTimer from "./timer";
 import initCelebrationTypes from "./celebrationTypes";
 import initTriggerDropdownButton from "./triggerDropdownButton";
 import initCheckoutOptions, { initCheckoutButton } from "./checkout";
+import { initLanguagePicker } from "./languagePicker";
 
 document.addEventListener("DOMContentLoaded", () => {
   initVideoSlider();
@@ -13,9 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
   initTriggerDropdownButton();
   initCheckoutOptions();
   initCheckoutButton();
+  initLanguagePicker();
 
   const mainBodyContainerEl = document.querySelector("#mainBody");
   const telegramIconEl = document.querySelector("#telegramIcon");
+  const languagePickerEl = document.querySelector("#languagePicker");
 
   if (mainBodyContainerEl && telegramIconEl) {
     function updatePosition() {
@@ -26,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
 
-    // Update position on load and resize
     window.addEventListener("resize", updatePosition);
     updatePosition();
     telegramIconEl.classList.remove("invisible");
