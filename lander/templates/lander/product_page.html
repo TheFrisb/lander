@@ -51,7 +51,7 @@
                                 </video>
                             </div>
                             <!-- Team Name Badge -->
-                            <div class="absolute top-3 right-3 bg-black font-bold backdrop-blur-sm text-white px-2 py-1 rounded-md text-xs shadow-sm flex items-center gap-1.5">
+                            <div class="absolute top-3 right-3 bg-black/20 font-bold backdrop-blur-sm text-white px-2 py-1 rounded-md text-2xl shadow-sm flex items-center gap-1.5">
                                 <span>{{ product.emoji }}</span>
                                 {% blocktranslate with name=product.name %}{{ name }}{% endblocktranslate %}
                             </div>
@@ -199,6 +199,11 @@
 
 
 
+
+
+
+
+
                                     {% blocktranslate with description=product.description %}{{ description }}{% endblocktranslate %}"
                             data-product-regular-price="{{ product.regular_price }}"
                             data-product-sale-price="{{ product.discount_price }}"
@@ -334,7 +339,6 @@
 
 
                 </div>
-                <div class="swiper-pagination"></div>
                 <button data-v-aab3d20f=""
                         class="swiper-button-prev !absolute !left-0 !w-10 !h-10 !bg-white hover:!bg-gray-50 !rounded-full !shadow-lg !z-50 !border !border-gray-100">
                     <svg data-v-aab3d20f="" xmlns="http://www.w3.org/2000/svg" class="!h-5 !w-5 !text-gray-600 !m-auto"
