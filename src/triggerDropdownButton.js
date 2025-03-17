@@ -54,6 +54,7 @@ function initTriggerDropdownButton() {
           activeProductId,
           productRegularPrice,
           productSalePrice,
+          productVideoUrl,
         );
       } else {
         updateCheckoutPageMetadata(
@@ -102,6 +103,7 @@ function initTriggerDropdownButton() {
     activeProductId,
     productRegularPrice,
     productSalePrice,
+    productVideoUrl,
   ) {
     if (isCheckoutPage) {
       console.error("This function should only be called on the product page.");
@@ -113,6 +115,9 @@ function initTriggerDropdownButton() {
     const savedPercentage = Math.round(
       100 - (productSalePrice / productRegularPrice) * 100,
     );
+
+    const videoEl = document.querySelector("#dropdownButtonVideo");
+    videoEl.src = productVideoUrl;
 
     discountPercentageEl.textContent = `${savedPercentage}`;
 

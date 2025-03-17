@@ -147,6 +147,10 @@
         <div class="max-w-md mx-auto">
             <div class="relative mt-1">
                 <button class="triggerDropdownButton border border-secondary relative w-full cursor-pointer rounded-lg bg-white py-4 pl-5 pr-10 text-left shadow-md hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-opacity-75">
+                    <video src="{{ chosen_product.video.url }}" autoplay="" muted="" playsinline=""
+                           class="absolute top-0 left-0 w-full h-full object-cover  opacity-20"
+                           style="border-radius: 8px"
+                           id="dropdownButtonVideo"></video>
                     <div class="flex items-center justify-between">
                         <div>
                             <div class="flex items-center"><span
@@ -186,9 +190,15 @@
                         <li class="text-text-dark relative cursor-pointer py-2.5 pl-4 pr-10 hover:bg-blue-500/5 hover:text-blue-500 productDropdownOption
                     {% if product.id == chosen_product.id %}bg-blue-500/5 text-blue-500{% endif %}
                     " data-product-id="{{ product.id }}"
+                            data-product-video-url="{{ product.video.url }}"
+
                             data-product-name="
                                     {% blocktranslate with name=product.name %}{{ name }}{% endblocktranslate %}"
                             data-product-description="
+
+
+
+
                                     {% blocktranslate with description=product.description %}{{ description }}{% endblocktranslate %}"
                             data-product-regular-price="{{ product.regular_price }}"
                             data-product-sale-price="{{ product.discount_price }}"
@@ -198,8 +208,9 @@
                             <div class="flex items-center justify-between">
                                 <div>
                                     <div class="flex items-center">
-                                <span class="font-semibold block truncate">{{ product.emoji }} {% blocktranslate with name=product.name %}
-                                    {{ name }}{% endblocktranslate %}
+                                <span class="font-semibold block truncate">{{ product.emoji }}
+                                    {% blocktranslate with name=product.name %}
+                                        {{ name }}{% endblocktranslate %}
                                     </div>
                                     <span class="block truncate text-xs text-gray-500 mt-0.5">{% blocktranslate with description=product.description %}
                                         {{ description }}{% endblocktranslate %}
