@@ -6,20 +6,9 @@
     <div class="max-w-3xl mx-auto my-12">
         <h1 class="text-3xl font-bold text-black mb-6">{% blocktranslate %}Complete Your
             Order {% endblocktranslate %}</h1>
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-            <h2 class="text-xl font-semibold text-text-dark mb-4">{% blocktranslate %}How to
-                Order{% endblocktranslate %}</h2>
-            <div class="rounded-lg overflow-hidden bg-accent">
-                <video class="w-full" controls="" preload="metadata" autoplay=""
-                       loop=""
-                       muted="" playsinline="">
-                    <source src="{{ site_settings.how_to_order_video.url }}"
-                            type="video/mp4"/>
-                    {% blocktranslate %}Your browser does not support the video tag.{% endblocktranslate %}
-                </video>
-            </div>
-        </div>
+
     </div>
+
     <!-- Selected Team -->
     <div class="max-w-3xl mx-auto mb-8 relative">
         <button class="triggerDropdownButton bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl p-6 shadow-md border-2 border-secondary w-full relative "
@@ -364,6 +353,22 @@
         {% blocktranslate %}Pay{% endblocktranslate %} <span
             id="checkoutButtonPrice">€{{ chosen_product.discount_price }}</span>
     </button>
+
+    <div class="max-w-3xl mx-auto my-12">
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+            <h2 class="text-xl font-semibold text-text-dark mb-4">{% blocktranslate %}How to
+                Order{% endblocktranslate %}</h2>
+            <div class="rounded-lg overflow-hidden bg-accent">
+                <video class="w-full" controls="" preload="metadata" autoplay=""
+                       loop=""
+                       muted="" playsinline="">
+                    <source src="{{ site_settings.how_to_order_video.url }}"
+                            type="video/mp4"/>
+                    {% blocktranslate %}Your browser does not support the video tag.{% endblocktranslate %}
+                </video>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Additional bottom padding to account for the banner -->
