@@ -39,6 +39,7 @@ function initTriggerDropdownButton() {
       const productDescription = option.dataset.productDescription;
       const productRegularPrice = option.dataset.productRegularPrice;
       const productSalePrice = option.dataset.productSalePrice;
+      const productVideoUrl = option.dataset.productVideoUrl;
 
       updateChosenProduct(
         activeProductId,
@@ -59,6 +60,7 @@ function initTriggerDropdownButton() {
           activeProductId,
           productName,
           productSalePrice,
+          productVideoUrl,
         );
       }
 
@@ -70,6 +72,7 @@ function initTriggerDropdownButton() {
     activeProductId,
     productName,
     productSalePrice,
+    productVideoUrl,
   ) {
     const checkoutOrderSummaryEl = document.querySelector(
       "#checkoutOrderSummary",
@@ -85,9 +88,12 @@ function initTriggerDropdownButton() {
       "#checkoutButtonPrice",
     );
 
+    const videoEl = document.querySelector("#dropdownButtonVideo");
+
     checkoutChosenProductName.textContent = productName;
     checkoutChosenProductSalePrice.textContent = `€${productSalePrice}`;
     checkoutBuyButtonPriceEl.textContent = `€${productSalePrice}`;
+    videoEl.src = productVideoUrl;
 
     updateCheckoutSummary();
   }
