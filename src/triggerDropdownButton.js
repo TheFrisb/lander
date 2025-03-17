@@ -49,7 +49,11 @@ function initTriggerDropdownButton() {
       );
 
       if (!isCheckoutPage) {
-        updateProductPageMetadata(activeProductId, productSalePrice);
+        updateProductPageMetadata(
+          activeProductId,
+          productRegularPrice,
+          productSalePrice,
+        );
       } else {
         updateCheckoutPageMetadata(
           activeProductId,
@@ -88,11 +92,23 @@ function initTriggerDropdownButton() {
     updateCheckoutSummary();
   }
 
-  function updateProductPageMetadata(activeProductId, productSalePrice) {
+  function updateProductPageMetadata(
+    activeProductId,
+    productRegularPrice,
+    productSalePrice,
+  ) {
     if (isCheckoutPage) {
       console.error("This function should only be called on the product page.");
       return;
     }
+
+    const discountPercentageEl = document.querySelector("#discountPercentage");
+
+    const savedPercentage = Math.round(
+      100 - (productSalePrice / productRegularPrice) * 100,
+    );
+
+    discountPercentageEl.textContent = `${savedPercentage}`;
 
     chosenProductSalePrice.textContent = `€${productSalePrice}`;
     goToCheckoutButton.href = `/payments/checkout/${activeProductId}/`;

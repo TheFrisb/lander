@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 from decouple import config, Csv
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     # Third Party apps
     "adminsortable2",
     "solo",
+    "rosetta",
     # Internal apps
     "lander",
     "payments",
@@ -48,6 +50,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -68,6 +71,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "django.template.context_processors.i18n",
             ],
         },
     },
@@ -144,10 +148,17 @@ USE_I18N = True
 LANGUAGE_CODE = "en-us"
 LANGUAGES = [
     ("en", "English"),
-    ("el", "Greek"),
-    ("it", "Italian"),
-    ("fr", "French"),
     ("de", "German"),
+    ("zh-hans", "Chinese"),
+    ("es", "Spanish"),
+    ("fr", "French"),
+    ("ar", "Arabic"),
+    ("pt", "Portuguese"),
+    ("ru", "Russian"),
+    ("it", "Italian"),
+    ("bg", "Bulgarian"),
+    ("ro", "Romanian"),
+    ("tr", "Turkish"),
 ]
 LOCALE_PATHS = [BASE_DIR / "locale"]
 

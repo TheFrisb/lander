@@ -18,6 +18,9 @@ class CheckoutView(TemplateView):
         context["products"] = Product.objects.all().order_by("order")
         context["is_checkout"] = True
         context["site_settings"] = SiteSettings.get_solo()
+        context["starting_from_price"] = (
+            Product.objects.all().order_by("discount_price").first().discount_price
+        )
         return context
 
 
