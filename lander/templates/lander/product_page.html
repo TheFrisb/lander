@@ -152,6 +152,7 @@
             <div class="relative mt-1">
                 <button class="triggerDropdownButton border border-secondary relative w-full cursor-pointer rounded-lg bg-white py-4 pl-5 pr-10 text-left shadow-md hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-opacity-75">
                     <video src="{{ chosen_product.video.url }}" autoplay="" muted="" playsinline="" loop=""
+                           poster="{{ chosen_product.video_thumbnail.url }}"
                            class="absolute top-0 left-0 w-full h-full object-cover  opacity-20"
                            style="border-radius: 8px"
                            id="dropdownButtonVideo"></video>
@@ -200,6 +201,7 @@
                             data-product-name="
                                     {% blocktranslate with name=product.name %}{{ name }}{% endblocktranslate %}"
                             data-product-description="
+
 
 
 

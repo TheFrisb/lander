@@ -13,6 +13,7 @@
         <button class="triggerDropdownButton bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl p-6 shadow-md border-2 border-secondary w-full relative "
                 id="checkoutProductDropdownButton">
             <video src="{{ chosen_product.video.url }}" autoplay="" muted="" playsinline=""
+                   poster="{{ chosen_product.video_thumbnail.url }}"
                    class="absolute top-0 left-0 w-full h-full object-cover  opacity-10"
                    id="dropdownButtonVideo" style="border-radius: 8px"></video>
             <div class="flex items-center justify-between">
