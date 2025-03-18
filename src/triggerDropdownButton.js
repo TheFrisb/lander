@@ -40,6 +40,7 @@ function initTriggerDropdownButton() {
       const productRegularPrice = option.dataset.productRegularPrice;
       const productSalePrice = option.dataset.productSalePrice;
       const productVideoUrl = option.dataset.productVideoUrl;
+      const productVideoPosterUrl = option.dataset.productVideoPosterUrl;
 
       updateChosenProduct(
         activeProductId,
