@@ -76,16 +76,19 @@
             <!-- Thumbnail Slider -->
 
         </div>
-        <div class="thumbnailSwiper">
-            <div class="swiper-wrapper">
-                {% for product in products %}
-                    <div class="swiper-slide rounded-lg">
-                        <img src="{{ product.video_thumbnail.url }}" alt="Thumbnail" class="w-full h-auto rounded-lg"/>
-                    </div>
-                {% endfor %}
+        <div class="overflow-hidden">
+            <div class="thumbnailSwiper">
+                <div class="swiper-wrapper">
+                    {% for product in products %}
+                        <div class="swiper-slide rounded-lg">
+                            <img src="{{ product.video_thumbnail.url }}" alt="Thumbnail"
+                                 class="w-full h-auto rounded-lg lazy"/>
+                        </div>
+                    {% endfor %}
 
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -195,6 +198,9 @@
                             data-product-name="
                                     {% blocktranslate with name=product.name %}{{ name }}{% endblocktranslate %}"
                             data-product-description="
+
+
+
 
 
 

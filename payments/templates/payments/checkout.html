@@ -320,7 +320,7 @@
                         <span class="font-medium"
                               id="checkoutChosenProductSalePrice">€{{ chosen_product.discount_price }}</span></div>
                 </div>
-                <div class="flex flex-col gap-1 border-b border-gray-50 py-2 last:border-b-0">
+                <div class="flex flex-col gap-1 py-2 last:border-b-0">
                     <div class="flex justify-between text-sm"><span class="text-gray-600">{% blocktranslate %}Message to
                         say{% endblocktranslate %}</span><span
                             class="font-medium">Included</span></div>
@@ -329,29 +329,31 @@
 
                 </div>
             </div>
+            <div class="p-3 mt-4 border-t border-gray-100">
+                <div class="flex justify-between"><span
+                        class="text-lg font-semibold text-text-dark">{% blocktranslate %}
+                    Total{% endblocktranslate %}</span><span
+                        class="text-lg font-bold text-primary"
+                        id="checkoutTotalPrice">€{{ chosen_product.discount_price }}</span></div>
+            </div>
+            <button class="w-full max-w-3xl mx-auto  bg-accent text-white py-4 rounded-lg hover:bg-accent/90 transition-colors font-medium flex items-center justify-center gap-2"
+                    id="checkoutButton">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                    ></path>
+                </svg>
+                {% blocktranslate %}Pay{% endblocktranslate %} <span
+                    id="checkoutButtonPrice">€{{ chosen_product.discount_price }}</span>
+            </button>
         </div>
-        <div class="p-3 mt-4 border-t border-gray-100">
-            <div class="flex justify-between"><span class="text-lg font-semibold text-text-dark">{% blocktranslate %}
-                Total{% endblocktranslate %}</span><span
-                    class="text-lg font-bold text-primary"
-                    id="checkoutTotalPrice">€{{ chosen_product.discount_price }}</span></div>
-        </div>
+
     </div>
-    </div>
-    <button class="w-full max-w-3xl mx-auto mt-6 bg-accent text-white py-4 rounded-lg hover:bg-accent/90 transition-colors font-medium flex items-center justify-center gap-2"
-            id="checkoutButton">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-             stroke="currentColor">
-            <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
-            ></path>
-        </svg>
-        {% blocktranslate %}Pay{% endblocktranslate %} <span
-            id="checkoutButtonPrice">€{{ chosen_product.discount_price }}</span>
-    </button>
+
 
     <div class="max-w-3xl mx-auto my-12">
         <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
