@@ -195,10 +195,13 @@
                     {% if product.id == chosen_product.id %}bg-blue-500/5 text-blue-500{% endif %}
                     " data-product-id="{{ product.id }}"
                             data-product-video-url="{{ product.video.url }}"
+                            data-product-video-poster-url="{{ product.video_thumbnail.url }}"
 
                             data-product-name="
                                     {% blocktranslate with name=product.name %}{{ name }}{% endblocktranslate %}"
                             data-product-description="
+
+
 
 
 

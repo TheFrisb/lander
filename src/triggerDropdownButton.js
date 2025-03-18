@@ -56,6 +56,7 @@ function initTriggerDropdownButton() {
           productRegularPrice,
           productSalePrice,
           productVideoUrl,
+          productVideoPosterUrl,
         );
       } else {
         updateCheckoutPageMetadata(
@@ -63,6 +64,7 @@ function initTriggerDropdownButton() {
           productName,
           productSalePrice,
           productVideoUrl,
+          productVideoPosterUrl,
         );
       }
 
@@ -75,6 +77,7 @@ function initTriggerDropdownButton() {
     productName,
     productSalePrice,
     productVideoUrl,
+    productVideoPosterUrl,
   ) {
     const checkoutOrderSummaryEl = document.querySelector(
       "#checkoutOrderSummary",
@@ -96,6 +99,7 @@ function initTriggerDropdownButton() {
     checkoutChosenProductSalePrice.textContent = `€${productSalePrice}`;
     checkoutBuyButtonPriceEl.textContent = `€${productSalePrice}`;
     videoEl.src = productVideoUrl;
+    videoEl.poster = productVideoPosterUrl;
 
     updateCheckoutSummary();
   }
@@ -105,6 +109,7 @@ function initTriggerDropdownButton() {
     productRegularPrice,
     productSalePrice,
     productVideoUrl,
+    productVideoPosterUrl,
   ) {
     if (isCheckoutPage) {
       console.error("This function should only be called on the product page.");
@@ -118,6 +123,7 @@ function initTriggerDropdownButton() {
     );
 
     const videoEl = document.querySelector("#dropdownButtonVideo");
+    videoEl.poster = productVideoPosterUrl;
     videoEl.src = productVideoUrl;
 
     discountPercentageEl.textContent = `${savedPercentage}`;
