@@ -21,6 +21,7 @@
 
     {% for product in products|slice:":4" %}
         <link rel="prefetch" href="{{ product.video_thumbnail.url }}" as="image">
+        <link rel="prefetch" href="{{ product.video.url }}" as="video">
     {% endfor %}
     <style>
         html {

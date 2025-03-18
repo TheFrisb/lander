@@ -45,7 +45,8 @@
                                 <video src="{{ product.video.url }}" autoplay=""
                                        loop=""
                                        muted="" playsinline="" class="w-full h-full " controls="" preload="metadata"
-                                       data-poster-url="{{ product.video_thumbnail.url }}">
+                                       poster="{{ product.video_thumbnail.url }}">
+                                    data-poster-url="{{ product.video_thumbnail.url }}">
                                     {% blocktranslate %}Your browser does not support the video
                                         tag.{% endblocktranslate %}
                                 </video>
@@ -198,6 +199,8 @@
                             data-product-name="
                                     {% blocktranslate with name=product.name %}{{ name }}{% endblocktranslate %}"
                             data-product-description="
+
+
 
 
 
