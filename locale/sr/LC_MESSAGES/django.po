@@ -20,7 +20,7 @@ msgstr ""
 
 #: lander/templates/lander/base.html:70
 msgid "OFF"
-msgstr "ISKLJUČENO"
+msgstr "POPUSTA"
 
 #: lander/templates/lander/base.html:72
 msgid ""
