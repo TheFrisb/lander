@@ -207,7 +207,7 @@ msgstr "Adicionar ao carrinho"
 #: lander/templates/lander/product_page.html:287
 #, python-format
 msgid "100%% Satisfaction Guaranteed"
-msgstr "Satisfação Garantida 100%"
+msgstr "Satisfação Garantida 100%%"
 
 #: lander/templates/lander/product_page.html:297
 msgid ""

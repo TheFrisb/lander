@@ -201,7 +201,7 @@ msgstr "Adăugați în coș"
 #: lander/templates/lander/product_page.html:287
 #, python-format
 msgid "100%% Satisfaction Guaranteed"
-msgstr "Satisfacție garantată 100%"
+msgstr "Satisfacție garantată 100%%"
 
 #: lander/templates/lander/product_page.html:297
 msgid ""

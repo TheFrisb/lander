@@ -204,7 +204,7 @@ msgstr "Sepete ekle"
 #: lander/templates/lander/product_page.html:287
 #, python-format
 msgid "100%% Satisfaction Guaranteed"
-msgstr "%100 Memnuniyet Garantili"
+msgstr "100%% Memnuniyet Garantili"
 
 #: lander/templates/lander/product_page.html:297
 msgid ""
