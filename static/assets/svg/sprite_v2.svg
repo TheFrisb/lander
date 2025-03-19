@@ -1220,7 +1220,7 @@
         <path fill="#ce1124" d="M0 201.6h640v76.8H0z"/>
     </symbol>
 
-    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="rsFlagIcon"
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="srFlagIcon"
             viewBox="0 0 640 480">
         <defs>
             <clipPath id="rs-a">
