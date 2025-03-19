@@ -8,29 +8,32 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-17 01:28+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-03-17 01:29+0000\n"
+"PO-Revision-Date: 2025-03-19 05:13+0000\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
 
 #: lander/templates/lander/base.html:65
 msgid "OFF"
-msgstr ""
+msgstr "Aus"
 
 #: lander/templates/lander/base.html:67
 msgid ""
 "\n"
 "                        Limited Time Offer"
 msgstr ""
+"\n"
+"Zeitlich begrenztes Angebot"
 
 #: lander/templates/lander/base.html:86
 msgid "Starting from"
-msgstr ""
+msgstr "Ab"
 
 #: lander/templates/lander/base.html:88 lander/templates/lander/base.html:93
 #: lander/templates/lander/base.html:98 lander/templates/lander/base.html:103
@@ -41,7 +44,7 @@ msgstr ""
 msgid ""
 "Flash\n"
 "                    Sale"
-msgstr ""
+msgstr "Blitzverkauf"
 
 #: lander/templates/lander/base.html:90 lander/templates/lander/base.html:95
 #: lander/templates/lander/base.html:100 lander/templates/lander/base.html:105
@@ -51,48 +54,49 @@ msgstr ""
 msgid ""
 "Starting\n"
 "                    from"
-msgstr ""
+msgstr "Ab"
 
 #: lander/templates/lander/product_page.html:8
 msgid "Premium Celebration Services"
-msgstr ""
+msgstr "Premium-Feierdienste"
 
 #: lander/templates/lander/product_page.html:10
 msgid "Surprise your closest"
-msgstr ""
+msgstr "asd asd asd"
 
 #: lander/templates/lander/product_page.html:11
 msgid "friends"
-msgstr ""
+msgstr "Freunde"
 
 #: lander/templates/lander/product_page.html:11
 #: venv/lib/python3.12/site-packages/django/db/models/base.py:1572
 #: venv/lib/python3.12/site-packages/django/forms/models.py:908
 msgid "and"
-msgstr ""
+msgstr "und"
 
 #: lander/templates/lander/product_page.html:11
 msgid "relatives"
-msgstr ""
+msgstr "Verwandten"
 
 #: lander/templates/lander/product_page.html:11
 msgid ""
 "with a\n"
 "                    unique and exciting celebration for their special moments"
 msgstr ""
+"mit einer einzigartigen und aufregenden Feier für ihre besonderen Momente"
 
 #: lander/templates/lander/product_page.html:24
 msgid "24hr Express Delivery"
-msgstr ""
+msgstr "24-Stunden-Expresslieferung"
 
 #: lander/templates/lander/product_page.html:31
 msgid "Look at the surprises we do"
-msgstr ""
+msgstr "Schau dir die Überraschungen an, die wir machen"
 
 #: lander/templates/lander/product_page.html:43
 #: payments/templates/payments/checkout.html:18
 msgid "Your browser does not support the video tag."
-msgstr ""
+msgstr "Dein Browser unterstützt das Video-Tag nicht."
 
 #: lander/templates/lander/product_page.html:48
 #: lander/templates/lander/product_page.html:139
@@ -105,26 +109,27 @@ msgstr ""
 
 #: lander/templates/lander/product_page.html:95
 msgid "Our guys and girls talk at your language!"
-msgstr ""
+msgstr "Unsere Jungs und Mädels sprechen deine Sprache!"
 
 #: lander/templates/lander/product_page.html:106
 msgid "Song by your choice!"
-msgstr ""
+msgstr "Lied nach deiner Wahl!"
 
 #: lander/templates/lander/product_page.html:117
 msgid "Click to see all celebration types!"
-msgstr ""
+msgstr "Klicke, um alle Feiertypen zu sehen!"
 
 #: lander/templates/lander/product_page.html:130
 msgid "Choose Your Perfect Team"
-msgstr ""
+msgstr "Wähle dein perfektes Team"
 
 #: lander/templates/lander/product_page.html:131
 msgid ""
 "Select from our expert celebration teams, each specially\n"
-"            trained to create unforgettable moments for your special "
-"occasions."
+"            trained to create unforgettable moments for your special occasions."
 msgstr ""
+"Wähle aus unseren erfahrenen Feierteams, die jeweils speziell geschult sind,"
+" um unvergessliche Momente für deine besonderen Anlässe zu schaffen."
 
 #: lander/templates/lander/product_page.html:141
 #: lander/templates/lander/product_page.html:168
@@ -135,20 +140,20 @@ msgstr ""
 
 #: lander/templates/lander/product_page.html:206
 msgid "Add to cart"
-msgstr ""
+msgstr "In den Warenkorb"
 
 #: lander/templates/lander/product_page.html:215
 #, python-format
 msgid "100%% Satisfaction Guaranteed"
-msgstr ""
+msgstr "100%% Zufriedenheit garantiert"
 
 #: lander/templates/lander/product_page.html:225
 msgid "What Our Customers Say"
-msgstr ""
+msgstr "Was unsere Kunden sagen"
 
 #: lander/templates/lander/product_page.html:253
 msgid "verified reviews"
-msgstr ""
+msgstr "verifizierte Bewertungen"
 
 #: lander/templates/lander/product_page.html:270
 #, python-format
@@ -157,72 +162,81 @@ msgstr ""
 
 #: lander/templates/lander/product_page.html:314
 msgid "About us"
-msgstr ""
+msgstr "Über uns"
 
 #: lander/templates/lander/product_page.html:316
 msgid ""
 "Since 2020, we've been bringing joy and excitement to celebrations\n"
-"            across the country. Our diverse teams of celebration specialists "
-"combine creativity, energy, and\n"
-"            professionalism to create unforgettable moments. From intimate "
-"gatherings to grand events, we personalize\n"
+"            across the country. Our diverse teams of celebration specialists combine creativity, energy, and\n"
+"            professionalism to create unforgettable moments. From intimate gatherings to grand events, we personalize\n"
 "            every celebration to match your style and vision."
 msgstr ""
+"Seit 2020 bringen wir Freude und Aufregung zu Feiern im ganzen Land. Unsere "
+"vielfältigen Teams von Feierspezialisten vereinen Kreativität, Energie und "
+"Professionalität, um unvergessliche Momente zu schaffen. Von intimen "
+"Zusammenkünften bis hin zu großen Veranstaltungen passen wir jede Feier an "
+"deinen Stil und deine Vision an."
 
 #: lander/templates/lander/product_page.html:331
 msgid "Expert Teams"
-msgstr ""
+msgstr "Experten-Teams"
 
 #: lander/templates/lander/product_page.html:332
 msgid ""
 "Our celebration specialists bring 10+ years of combined experience to every\n"
 "                event"
 msgstr ""
+"Unsere Feierspezialisten bringen über 10 Jahre kombinierte Erfahrung zu "
+"jedem Event mit"
 
 #: lander/templates/lander/product_page.html:334
 msgid "20+ Certified Specialists"
-msgstr ""
+msgstr "20+ zertifizierte Spezialisten"
 
 #: lander/templates/lander/product_page.html:346
 msgid "Magical moments created for families across the country since 2020"
 msgstr ""
+"Magische Momente, die seit 2020 für Familien im ganzen Land geschaffen "
+"wurden"
 
 #: lander/templates/lander/product_page.html:347
 #, python-format
 msgid "98%% Success Rate"
-msgstr ""
+msgstr "98%% Erfolgsquote"
 
 #: lander/templates/lander/product_page.html:358
 msgid "Unique Experience"
-msgstr ""
+msgstr "Einzigartige Erfahrung"
 
 #: lander/templates/lander/product_page.html:359
 msgid "Every celebration is uniquely crafted to match your style and vision"
 msgstr ""
+"Jede Feier wird einzigartig gestaltet, um deinem Stil und deiner Vision zu "
+"entsprechen"
 
 #: lander/templates/lander/product_page.html:360
 msgid "100+ Event Styles"
-msgstr ""
+msgstr "100+ Event-Stile"
 
 #: lander/templates/lander/product_page.html:369
 msgid "Celebration Types"
-msgstr ""
+msgstr "Feiertypen"
 
 #: lander/templates/lander/product_page.html:370
 msgid "Choose from our wide range of celebration options"
-msgstr ""
+msgstr "Wähle aus unserem breiten Angebot an Feieroptionen"
 
 #: payments/templates/payments/checkout.html:7
 msgid ""
 "Complete Your\n"
 "            Order "
-msgstr ""
+msgstr "Schließe deine Bestellung ab"
 
 #: payments/templates/payments/checkout.html:10
 msgid ""
 "How to\n"
 "                Order"
-msgstr ""
+msgstr "Wie man bestellt"
 
 #: payments/templates/payments/checkout.html:29
 #, python-format
@@ -240,11 +254,11 @@ msgstr ""
 
 #: payments/templates/payments/checkout.html:36
 msgid "Base price"
-msgstr ""
+msgstr "Grundpreis"
 
 #: payments/templates/payments/checkout.html:55
 msgid "Selected package"
-msgstr ""
+msgstr "Ausgewähltes Paket"
 
 #: payments/templates/payments/checkout.html:65
 #, python-format
@@ -271,183 +285,185 @@ msgstr ""
 
 #: payments/templates/payments/checkout.html:108
 msgid "Delivery Email"
-msgstr ""
+msgstr "Liefer-E-Mail"
 
 #: payments/templates/payments/checkout.html:114
 msgid ""
 "Your video will be delivered to this email\n"
 "                    address"
-msgstr ""
+msgstr "Dein Video wird an diese E-Mail-Adresse geliefert"
 
 #: payments/templates/payments/checkout.html:123
 msgid "Message to say"
-msgstr ""
+msgstr "Nachricht zum Sagen"
 
 #: payments/templates/payments/checkout.html:130
 msgid ""
 "Message to\n"
 "                            say"
-msgstr ""
+msgstr "Nachricht zum Sagen"
 
 #: payments/templates/payments/checkout.html:132
 msgid ""
 "Text you want us to\n"
 "                                say"
-msgstr ""
+msgstr "Text, den du uns sagen lassen möchtest"
 
 #: payments/templates/payments/checkout.html:135
 msgid ""
 "\n"
 "                            Included"
 msgstr ""
+"\n"
+"Inbegriffen"
 
 #: payments/templates/payments/checkout.html:139
 msgid "Happy birthday Alex"
-msgstr ""
+msgstr "Alles Gute zum Geburtstag, Alex"
 
 #: payments/templates/payments/checkout.html:147
 msgid "Song of choice"
-msgstr ""
+msgstr "Lied nach Wahl"
 
 #: payments/templates/payments/checkout.html:148
 msgid "Add your preferred song"
-msgstr ""
+msgstr "Füge dein bevorzugtes Lied hinzu"
 
 #: payments/templates/payments/checkout.html:155
 msgid ""
 "Song of\n"
 "                                choice"
-msgstr ""
+msgstr "Lied nach Wahl"
 
 #: payments/templates/payments/checkout.html:157
 msgid ""
 "Add your preferred\n"
 "                                song"
-msgstr ""
+msgstr "Füge dein bevorzugtes Lied hinzu"
 
 #: payments/templates/payments/checkout.html:172
 msgid "Attach photo to be shown in the video"
-msgstr ""
+msgstr "Foto anhängen, das im Video gezeigt werden soll"
 
 #: payments/templates/payments/checkout.html:179
 msgid ""
 "Photo in\n"
 "                                video"
-msgstr ""
+msgstr "Foto im Video"
 
 #: payments/templates/payments/checkout.html:181
 msgid ""
 "Attach photo to be shown in the\n"
 "                                video"
-msgstr ""
+msgstr "Foto anhängen, das im Video gezeigt werden soll"
 
 #: payments/templates/payments/checkout.html:195
 msgid "Kiss photo in video"
-msgstr ""
+msgstr "Kussfoto im Video"
 
 #: payments/templates/payments/checkout.html:196
 msgid "Include a kiss photo in the video"
-msgstr ""
+msgstr "Füge ein Kussfoto im Video hinzu"
 
 #: payments/templates/payments/checkout.html:203
 msgid ""
 "Kiss photo in\n"
 "                                video"
-msgstr ""
+msgstr "Kussfoto im Video"
 
 #: payments/templates/payments/checkout.html:205
 msgid ""
 "Include a kiss photo in the\n"
 "                                video"
-msgstr ""
+msgstr "Füge ein Kussfoto im Video hinzu"
 
 #: payments/templates/payments/checkout.html:216
 msgid "Additional message"
-msgstr ""
+msgstr "Zusätzliche Nachricht"
 
 #: payments/templates/payments/checkout.html:217
 msgid "Add extra text in the video"
-msgstr ""
+msgstr "Zusätzlichen Text im Video hinzufügen"
 
 #: payments/templates/payments/checkout.html:224
 msgid ""
 "Additional\n"
 "                                message"
-msgstr ""
+msgstr "Zusätzliche Nachricht"
 
 #: payments/templates/payments/checkout.html:226
 msgid ""
 "Add extra text in the\n"
 "                                video"
-msgstr ""
+msgstr "Zusätzlichen Text im Video hinzufügen"
 
 #: payments/templates/payments/checkout.html:233
 msgid "Nice Alek you finally got a girlfriend"
-msgstr ""
+msgstr "Schön, Alek, du hast endlich eine Freundin"
 
 #: payments/templates/payments/checkout.html:242
 msgid "Express delivery"
-msgstr ""
+msgstr "Expresslieferung"
 
 #: payments/templates/payments/checkout.html:243
 msgid "Delivery under 8 hours"
-msgstr ""
+msgstr "Lieferung unter 8 Stunden"
 
 #: payments/templates/payments/checkout.html:250
 msgid ""
 "Express\n"
 "                                delivery"
-msgstr ""
+msgstr "Expresslieferung"
 
 #: payments/templates/payments/checkout.html:252
 msgid ""
 "Delivery under 8\n"
 "                                hours"
-msgstr ""
+msgstr "Lieferung unter 8 Stunden"
 
 #: payments/templates/payments/checkout.html:263
 msgid "Reels format"
-msgstr ""
+msgstr "Reels-Format"
 
 #: payments/templates/payments/checkout.html:264
 msgid "Video filmed in reels format"
-msgstr ""
+msgstr "Video im Reels-Format gefilmt"
 
 #: payments/templates/payments/checkout.html:271
 msgid ""
 "Reels\n"
 "                                format"
-msgstr ""
+msgstr "Reels-Format"
 
 #: payments/templates/payments/checkout.html:273
 msgid ""
 "Video filmed in reels\n"
 "                                format"
-msgstr ""
+msgstr "Video im Reels-Format gefilmt"
 
 #: payments/templates/payments/checkout.html:284
 msgid "Horizontal format"
-msgstr ""
+msgstr "Horizontales Format"
 
 #: payments/templates/payments/checkout.html:285
 msgid "Video filmed in horizontal format"
-msgstr ""
+msgstr "Video im horizontalen Format gefilmt"
 
 #: payments/templates/payments/checkout.html:292
 msgid ""
 "Horizontal\n"
 "                                format"
-msgstr ""
+msgstr "Horizontales Format"
 
 #: payments/templates/payments/checkout.html:294
 msgid ""
 "Video filmed in horizontal\n"
 "                                format"
-msgstr ""
+msgstr "Video im horizontalen Format gefilmt"
 
 #: payments/templates/payments/checkout.html:305
 msgid "Professional editing"
-msgstr ""
+msgstr "Professionelle Bearbeitung"
 
 #: payments/templates/payments/checkout.html:306
 msgid "Special edit from our professional video editor"
@@ -457,13 +473,13 @@ msgstr ""
 msgid ""
 "Professional\n"
 "                                editing"
-msgstr ""
+msgstr "Professionelle Bearbeitung"
 
 #: payments/templates/payments/checkout.html:315
 msgid ""
 "Special edit from our professional\n"
 "                                video editor"
-msgstr ""
+msgstr "Spezielle Bearbeitung von unserem professionellen Videoeditor"
 
 #: payments/templates/payments/checkout.html:333
 #, python-format
@@ -476,17 +492,19 @@ msgstr ""
 msgid ""
 "Message to\n"
 "                        say"
-msgstr ""
+msgstr "Nachricht zum Sagen"
 
 #: payments/templates/payments/checkout.html:349
 msgid ""
 "\n"
 "                Total"
 msgstr ""
+"\n"
+"Gesamt"
 
 #: payments/templates/payments/checkout.html:367
 msgid "Pay"
-msgstr ""
+msgstr "Bezahlen"
 
 #: venv/lib/python3.12/site-packages/click/_termui_impl.py:556
 #, python-brace-format
@@ -829,8 +847,8 @@ msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/core/validators.py:318
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/core/validators.py:330
@@ -1037,15 +1055,15 @@ msgstr ""
 #: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1556
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1564
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1569
@@ -1064,8 +1082,8 @@ msgstr ""
 #: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1859
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1863
@@ -1224,7 +1242,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: venv/lib/python3.12/site-packages/django/forms/boundfield.py:185
 msgid ":?.!"
 msgstr ""
@@ -1274,7 +1293,8 @@ msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/forms/fields.py:637
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -1381,7 +1401,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/forms/models.py:1450
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/forms/models.py:1594
@@ -1841,10 +1862,10 @@ msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/views/csrf.py:45
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1896,8 +1917,8 @@ msgstr ""
 #: venv/lib/python3.12/site-packages/django/views/generic/dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/views/generic/dates.py:692
@@ -1955,10 +1976,10 @@ msgstr ""
 #: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:208
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:217
