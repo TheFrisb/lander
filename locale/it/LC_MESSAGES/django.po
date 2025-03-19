@@ -1,0 +1,864 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-19 14:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lander/templates/lander/base.html:70
+msgid "OFF"
+msgstr "OFF"
+
+#: lander/templates/lander/base.html:72
+msgid ""
+"\n"
+"                        Limited Time Offer"
+msgstr ""
+"\n"
+"Offerta a tempo limitato"
+
+#: lander/templates/lander/base.html:91
+msgid "Starting from"
+msgstr "Iniziando da"
+
+#: lander/templates/lander/base.html:93 lander/templates/lander/base.html:98
+#: lander/templates/lander/base.html:103 lander/templates/lander/base.html:108
+#: lander/templates/lander/base.html:113 lander/templates/lander/base.html:115
+#: lander/templates/lander/base.html:120 lander/templates/lander/base.html:125
+#: lander/templates/lander/base.html:130 lander/templates/lander/base.html:135
+#: lander/templates/lander/base.html:140 lander/templates/lander/base.html:145
+msgid ""
+"Flash\n"
+"                    Sale"
+msgstr ""
+"Flash\n"
+"                    Vendita"
+
+#: lander/templates/lander/base.html:95 lander/templates/lander/base.html:100
+#: lander/templates/lander/base.html:105 lander/templates/lander/base.html:110
+#: lander/templates/lander/base.html:117 lander/templates/lander/base.html:122
+#: lander/templates/lander/base.html:127 lander/templates/lander/base.html:132
+#: lander/templates/lander/base.html:137 lander/templates/lander/base.html:142
+msgid ""
+"Starting\n"
+"                    from"
+msgstr ""
+"Iniziando\n"
+"                    da"
+
+#: lander/templates/lander/product_page.html:9
+msgid "Premium Celebration Services"
+msgstr "Servizi di Celebrazione Premium"
+
+#: lander/templates/lander/product_page.html:11
+msgid ""
+"Surprise\n"
+"                        your closest"
+msgstr ""
+"Sorpresa\n"
+"                        i tuoi più stretti"
+
+#: lander/templates/lander/product_page.html:13
+msgid "friends"
+msgstr "amici"
+
+#: lander/templates/lander/product_page.html:14
+msgid "and"
+msgstr "e"
+
+#: lander/templates/lander/product_page.html:14
+msgid ""
+"\n"
+"                            relatives"
+msgstr ""
+"\n"
+"parenti"
+
+#: lander/templates/lander/product_page.html:15
+msgid ""
+"with a\n"
+"                            unique and exciting celebration for their special moments"
+msgstr "con una celebrazione unica ed emozionante per i loro momenti speciali"
+
+#: lander/templates/lander/product_page.html:28
+msgid ""
+"\n"
+"                            24hr Express Delivery"
+msgstr ""
+"\n"
+"Consegna Express 24 ore"
+
+#: lander/templates/lander/product_page.html:36
+msgid ""
+"Look at the surprises we\n"
+"            do"
+msgstr "Guarda le sorprese che facciamo"
+
+#: lander/templates/lander/product_page.html:50
+msgid ""
+"Your browser does not support the video\n"
+"                                        tag."
+msgstr "Il tuo browser non supporta il tag video."
+
+#: lander/templates/lander/product_page.html:57
+#: lander/templates/lander/product_page.html:202
+#: payments/templates/payments/checkout.html:65
+#, python-format
+msgid "%(name)s"
+msgstr "%(name)s"
+
+#: lander/templates/lander/product_page.html:107
+msgid ""
+"Our guys and girls talk at your\n"
+"                    language!"
+msgstr "I nostri ragazzi e ragazze parlano la tua lingua!"
+
+#: lander/templates/lander/product_page.html:119
+msgid ""
+"Song by your\n"
+"                    choice!"
+msgstr "Canzone a tua scelta!"
+
+#: lander/templates/lander/product_page.html:131
+msgid ""
+"Click to see all celebration\n"
+"                        types!"
+msgstr "Clicca per vedere tutti i tipi di celebrazione!"
+
+#: lander/templates/lander/product_page.html:145
+msgid ""
+"Choose Your Perfect\n"
+"                Team"
+msgstr "Scegli il tuo team perfetto"
+
+#: lander/templates/lander/product_page.html:147
+msgid ""
+"Select from our expert celebration\n"
+"                teams, each specially\n"
+"                trained to create unforgettable moments for your special occasions."
+msgstr ""
+"Seleziona tra i nostri team di celebrazione esperti, ognuno appositamente "
+"addestrato per creare momenti indimenticabili per le tue occasioni speciali."
+
+#: lander/templates/lander/product_page.html:163
+#, python-format
+msgid ""
+"\n"
+"                                    %(name)s"
+msgstr ""
+"\n"
+"%(name)s"
+
+#: lander/templates/lander/product_page.html:166
+#: payments/templates/payments/checkout.html:67
+#, python-format
+msgid ""
+"\n"
+"                                %(description)s"
+msgstr ""
+"\n"
+"%(description)s"
+
+#: lander/templates/lander/product_page.html:232
+#, python-format
+msgid "%(description)s"
+msgstr "%(description)s"
+
+#: lander/templates/lander/product_page.html:242
+#, python-format
+msgid ""
+"\n"
+"                                        %(name)s"
+msgstr ""
+"\n"
+"%(name)s"
+
+#: lander/templates/lander/product_page.html:245
+#, python-format
+msgid ""
+"\n"
+"                                        %(description)s"
+msgstr ""
+"\n"
+"%(description)s"
+
+#: lander/templates/lander/product_page.html:277
+msgid "Add to cart"
+msgstr "Aggiungi al carrello"
+
+#: lander/templates/lander/product_page.html:287
+#, python-format
+msgid "100%% Satisfaction Guaranteed"
+msgstr "100%% Soddisfazione Garantita"
+
+#: lander/templates/lander/product_page.html:297
+msgid ""
+"What Our\n"
+"                    Customers Say"
+msgstr "Cosa dicono i nostri clienti"
+
+#: lander/templates/lander/product_page.html:326
+msgid "verified reviews"
+msgstr "recensioni verificate"
+
+#: lander/templates/lander/product_page.html:344
+#, python-format
+msgid ""
+"\n"
+"                                            %(content)s\n"
+"                                        "
+msgstr ""
+"\n"
+"Translate the text to Italian:\n"
+"\n"
+"                                            %(content)s"
+
+#: lander/templates/lander/product_page.html:384
+msgid ""
+"About\n"
+"            us"
+msgstr ""
+"Informazioni\n"
+"            su di\n"
+"            noi"
+
+#: lander/templates/lander/product_page.html:387
+msgid ""
+"Since 2020, we've been bringing joy and\n"
+"                excitement to celebrations\n"
+"                across the country. Our diverse teams of celebration specialists combine creativity, energy, and\n"
+"                professionalism to create unforgettable moments. From intimate gatherings to grand events, we\n"
+"                personalize\n"
+"                every celebration to match your style and vision."
+msgstr ""
+"Dal 2020, portiamo gioia ed eccitazione alle celebrazioni in tutto il paese."
+" I nostri team diversificati di specialisti delle celebrazioni combinano "
+"creatività, energia e professionalità per creare momenti indimenticabili. "
+"Dai raduni intimi agli eventi grandiosi, personalizziamo ogni celebrazione "
+"per rispecchiare il tuo stile e la tua visione."
+
+#: lander/templates/lander/product_page.html:404
+msgid ""
+"Expert\n"
+"                    Teams"
+msgstr ""
+"Esperto\n"
+"                    Squadre"
+
+#: lander/templates/lander/product_page.html:406
+msgid ""
+"Our celebration specialists bring 10+ years of combined\n"
+"                    experience to every\n"
+"                    event"
+msgstr ""
+"I nostri specialisti delle celebrazioni portano oltre 10 anni di esperienza "
+"combinata ad ogni evento"
+
+#: lander/templates/lander/product_page.html:409
+msgid ""
+"20+ Certified\n"
+"                    Specialists"
+msgstr "20+ Specialist Certificati"
+
+#: lander/templates/lander/product_page.html:422
+msgid ""
+"Magical moments created for families across the country\n"
+"                    since 2020"
+msgstr ""
+"Momenti magici creati per famiglie in tutto il paese\n"
+"                    dal 2020"
+
+#: lander/templates/lander/product_page.html:424
+#, python-format
+msgid ""
+"98%% Success\n"
+"                    Rate"
+msgstr ""
+"98%% Success\n"
+"                    Rate"
+
+#: lander/templates/lander/product_page.html:436
+msgid ""
+"Unique\n"
+"                    Experience"
+msgstr ""
+"Esperienza\n"
+"                    Unica"
+
+#: lander/templates/lander/product_page.html:438
+msgid ""
+"Every celebration is uniquely crafted to match your style\n"
+"                    and vision"
+msgstr ""
+"Ogni celebrazione è creata in modo unico per rispecchiare il tuo stile\n"
+"                    e la tua visione"
+
+#: lander/templates/lander/product_page.html:440
+msgid ""
+"100+ Event\n"
+"                    Styles"
+msgstr ""
+"100+ Event\n"
+"                    Stili"
+
+#: lander/templates/lander/product_page.html:450
+msgid ""
+"Celebration\n"
+"                    Types"
+msgstr ""
+"Celebrazione\n"
+"                    Tipi"
+
+#: lander/templates/lander/product_page.html:452
+msgid ""
+"Choose from our wide range of celebration\n"
+"                        options"
+msgstr "Scegli tra la nostra ampia gamma di opzioni di celebrazione"
+
+#: lander/templates/lander/product_page.html:466
+#, python-format
+msgid ""
+"\n"
+"                                %(name)s"
+msgstr ""
+"\n"
+"%(name)s"
+
+#: lander/views.py:18
+msgid ""
+"Ordered it for my brother and his wife for their anniversary and it was "
+"completed overnight 🙏! They loved it. Great idea for birthdays, "
+"anniversaries, etc."
+msgstr ""
+"L'ho ordinato per mio fratello e sua moglie per il loro anniversario ed è "
+"stato completato durante la notte 🙏! L'hanno adorato. Ottima idea per "
+"compleanni, anniversari, ecc."
+
+#: lander/views.py:32
+msgid ""
+"Great video! Made my day. This is an amazing idea! I don't know how you guys"
+" came up with this, but keep up with the good work!"
+msgstr ""
+"Grande video! Ha reso la mia giornata. Questa è un'idea incredibile! Non so "
+"come voi ragazzi abbiate avuto questa idea, ma continuate con il buon "
+"lavoro!"
+
+#: lander/views.py:46
+msgid ""
+"You guys made my sister's new car celebration so fun, bright and memorable! "
+"She loved it so much. Actually everybody loved it. Thank you for the amazing"
+" vibes, beautiful smiles and the kisses lol. Sending back a lot of joy and "
+"love to this awesome team ❤️. The order was made in the evening, and the "
+"video was ready in the morning. Many thanks :)"
+msgstr ""
+"Voi ragazzi avete reso così divertente, luminosa e memorabile la festa della"
+" nuova macchina di mia sorella! Lei l'ha adorata così tanto. In realtà, "
+"tutti l'hanno adorata. Grazie per le fantastiche vibrazioni, i sorrisi "
+"bellissimi e i baci ahah. Mando indietro tanto gioia e amore a questo "
+"fantastico team ❤️. L'ordine è stato fatto di sera, e il video era pronto la"
+" mattina. Molte grazie :)"
+
+#: lander/views.py:60
+msgid ""
+"Got the video exceptionally fast with high quality of work. Mom loved it. "
+"Great idea, and very professional and funny!"
+msgstr ""
+"Ho ricevuto il video in modo eccezionalmente veloce con un'alta qualità di "
+"lavoro. Mia mamma l'ha adorato. Ottima idea, molto professionale e "
+"divertente!"
+
+#: lander/views.py:74
+msgid ""
+"Got mine in less than 22 hrs i love you guys!!! Will order more funny videos"
+" for our friends!"
+msgstr ""
+"Ho ricevuto il mio in meno di 22 ore, vi adoro ragazzi!!! Ordinerò più video"
+" divertenti per i nostri amici!"
+
+#: lander/views.py:88
+msgid "Perfect gift! Keep up with the good work guys!"
+msgstr "Regalo perfetto! Continuate così ragazzi!"
+
+#: lander/views.py:102
+msgid ""
+"Love it, got my video after one day of ordering. Definitely will order again"
+" 😀"
+msgstr ""
+"Adoro, ho ricevuto il mio video dopo un giorno dall'ordine. Sicuramente "
+"ordinerò di nuovo 😀"
+
+#: lander/views.py:116
+msgid ""
+"THANK YOU SO MUCH. I love my video- I can't wait to show it to my mum. These"
+" guys are so energetic and my video was made so quickly! AMAZING"
+msgstr ""
+"GRAZIE MILLE. Adoro il mio video- non vedo l'ora di mostrarlo a mia mamma. "
+"Questi ragazzi sono così energetici e il mio video è stato realizzato così "
+"velocemente! INCREDIBILE"
+
+#: lander/views.py:130
+msgid ""
+"Wow, amazed at the quality, such a wonderful present for someone's "
+"graduation, will definitely order again."
+msgstr ""
+"Wow, stupito dalla qualità, un regalo meraviglioso per la laurea di "
+"qualcuno, sicuramente ordinerò di nuovo."
+
+#: lander/views.py:144
+msgid ""
+"Thank you guys, this is so-so good! Extraordinary performance and delivery "
+"from your side! Keep up the good work!"
+msgstr ""
+"Grazie ragazzi, questo è così buono! Prestazione straordinaria e consegna da"
+" parte vostra! Continuate così!"
+
+#: lander/views.py:158
+msgid ""
+"Perfect !!! Great performance, super funny. Done super fast in 1 day,Thank "
+"you girls so much! My grandad loved it, he said it was very sweet and he was"
+" so happy!"
+msgstr ""
+"Perfetto !!! Ottima performance, super divertente. Fatto super veloce in 1 "
+"giorno, Grazie ragazze mille! Mio nonno l'ha adorato, ha detto che era molto"
+" dolce e era così felice!"
+
+#: lander/views.py:172
+msgid ""
+"They are amazing, my partner is watching the video from them everyday. Thank"
+" you"
+msgstr ""
+"Sono incredibili, il mio partner guarda il video da loro tutti i giorni. "
+"Grazie"
+
+#: lander/views.py:186
+msgid ""
+"Love the video! Super satisfied with the humor and the creativity of the "
+"video. I highly recommend them."
+msgstr ""
+"Adoro il video! Sono super soddisfatto dell'umorismo e della creatività del "
+"video. Li raccomando vivamente."
+
+#: lander/views.py:200
+msgid ""
+"Very professional and amazing! Thanks for the laugh and love guys! Keep "
+"spreading joy!"
+msgstr ""
+"Molto professionale e incredibile! Grazie per la risata e l'amore ragazzi! "
+"Continuate a diffondere gioia!"
+
+#: lander/views.py:214
+msgid ""
+"I picked the love team, and it was very very lovely and fun. Delivery was "
+"less than 24 hours. I am fully satisfied with the result!"
+msgstr ""
+"Ho scelto il team dell'amore ed è stato molto molto bello e divertente. La "
+"consegna è stata inferiore alle 24 ore. Sono pienamente soddisfatto del "
+"risultato!"
+
+#: lander/views.py:228
+msgid ""
+"Amazing and very quickly sent out to me even without paying for the rush. "
+"Great quality. Very funny. Thanks so much :)"
+msgstr ""
+"Incredibile e inviato molto velocemente anche senza pagare per la fretta. "
+"Ottima qualità. Molto divertente. Grazie mille :)"
+
+#: lander/views.py:242
+msgid ""
+"Order came a day after ordering, very happy with the result and my brother "
+"enjoyed it."
+msgstr ""
+"L'ordine è arrivato un giorno dopo averlo effettuato, molto contento del "
+"risultato e mio fratello l'ha apprezzato."
+
+#: lander/views.py:256
+msgid ""
+"This was so fun! We loved it. I wanna order a thousand more! Great idea and "
+"so much happiness!"
+msgstr ""
+"Questo è stato così divertente! Ci è piaciuto molto. Voglio ordinare mille "
+"di più! Grande idea e tanta felicità!"
+
+#: lander/views.py:270
+msgid "Thanks for the best birthday video. I feel so happy"
+msgstr "Grazie per il miglior video di compleanno. Mi sento così felice."
+
+#: lander/views.py:284
+msgid ""
+"I placed an order on the 15th of march and the very next day i got my video "
+"greeting. I'm very happy with the result. Thank you so much. All the best, "
+"Luka"
+msgstr ""
+"Ho effettuato un ordine il 15 marzo e il giorno successivo ho ricevuto il "
+"mio video di auguri. Sono molto contento del risultato. Grazie mille. Tanti "
+"auguri, Luka"
+
+#: lander/views.py:299
+msgid "Birthday"
+msgstr "Compleanno"
+
+#: lander/views.py:311
+msgid "Mother's Day"
+msgstr "Festa della mamma"
+
+#: lander/views.py:323
+msgid "Graduation"
+msgstr "Laurea"
+
+#: lander/views.py:335
+msgid "Father's Day"
+msgstr "Festa del Papà"
+
+#: lander/views.py:347
+msgid "New Car"
+msgstr "Nuova auto"
+
+#: lander/views.py:359
+msgid "Newborn Baby"
+msgstr "Bambino appena nato"
+
+#: lander/views.py:371
+msgid "New House"
+msgstr "Nuova Casa"
+
+#: lander/views.py:383
+msgid "Christmas"
+msgstr "Natale"
+
+#: lander/views.py:395
+msgid "Easter"
+msgstr "Pasqua"
+
+#: lander/views.py:407
+msgid "Ramadan"
+msgstr "Ramadan"
+
+#: lander/views.py:419
+msgid "Anniversary"
+msgstr "Anniversario"
+
+#: lander/views.py:431
+msgid "Car License"
+msgstr "Targa dell'auto"
+
+#: lander/views.py:443
+msgid "Retirement"
+msgstr "Pensionamento"
+
+#: lander/views.py:455
+msgid "Work Promotion"
+msgstr "Promozione lavorativa"
+
+#: lander/views.py:467
+msgid "Your Choice"
+msgstr "La tua scelta"
+
+#: payments/templates/payments/checkout.html:7
+msgid ""
+"Complete Your\n"
+"            Order "
+msgstr "Completa il tuo ordine"
+
+#: payments/templates/payments/checkout.html:22
+#, python-format
+msgid ""
+"\n"
+"                            %(name)s"
+msgstr ""
+"\n"
+"%(name)s"
+
+#: payments/templates/payments/checkout.html:25
+#, python-format
+msgid ""
+"\n"
+"                            %(description)s"
+msgstr ""
+"\n"
+"%(description)s"
+
+#: payments/templates/payments/checkout.html:29
+msgid "Base price"
+msgstr "Prezzo base"
+
+#: payments/templates/payments/checkout.html:51
+#, python-format
+msgid ""
+"\n"
+"                    data-product-name=\"%(product.emoji)s %(name)s\"\n"
+"                    data-product-description=\"%(description)s\"\n"
+"                        "
+msgstr ""
+"\n"
+"data-product-name=\"%(product.emoji)s %(name)s\"\n"
+"data-product-description=\"%(description)s\""
+
+#: payments/templates/payments/checkout.html:95
+msgid "Delivery Email"
+msgstr "Email di consegna"
+
+#: payments/templates/payments/checkout.html:101
+msgid ""
+"Your video will be delivered to this email\n"
+"                    address"
+msgstr "Il tuo video verrà consegnato a questo indirizzo email"
+
+#: payments/templates/payments/checkout.html:110
+msgid "Message to say"
+msgstr "Messaggio da dire"
+
+#: payments/templates/payments/checkout.html:117
+msgid ""
+"Message to\n"
+"                            say"
+msgstr ""
+"Messaggio per\n"
+"                            dire"
+
+#: payments/templates/payments/checkout.html:119
+msgid ""
+"Text you want us to\n"
+"                                say"
+msgstr "Testo che vuoi che noi diciamo"
+
+#: payments/templates/payments/checkout.html:122
+msgid ""
+"\n"
+"                            Included"
+msgstr ""
+"\n"
+"Incluso"
+
+#: payments/templates/payments/checkout.html:126
+msgid "Happy birthday Alex"
+msgstr "Buon compleanno Alex"
+
+#: payments/templates/payments/checkout.html:134
+msgid "Song of choice"
+msgstr "Canzone di scelta"
+
+#: payments/templates/payments/checkout.html:135
+msgid "Add your preferred song"
+msgstr "Aggiungi la tua canzone preferita"
+
+#: payments/templates/payments/checkout.html:142
+msgid ""
+"Song of\n"
+"                                choice"
+msgstr ""
+"Canzone di\n"
+"                                scelta"
+
+#: payments/templates/payments/checkout.html:144
+msgid ""
+"Add your preferred\n"
+"                                song"
+msgstr "Aggiungi la tua canzone preferita"
+
+#: payments/templates/payments/checkout.html:159
+msgid "Attach photo to be shown in the video"
+msgstr "Allegare foto da mostrare nel video"
+
+#: payments/templates/payments/checkout.html:166
+msgid ""
+"Photo in\n"
+"                                video"
+msgstr ""
+"Foto nel\n"
+"                                video"
+
+#: payments/templates/payments/checkout.html:168
+msgid ""
+"Attach photo to be shown in the\n"
+"                                video"
+msgstr "Allegare foto da mostrare nel video"
+
+#: payments/templates/payments/checkout.html:182
+msgid "Kiss photo in video"
+msgstr "Bacio foto nel video"
+
+#: payments/templates/payments/checkout.html:183
+msgid "Include a kiss photo in the video"
+msgstr "Includi una foto di bacio nel video"
+
+#: payments/templates/payments/checkout.html:190
+msgid ""
+"Kiss photo in\n"
+"                                video"
+msgstr ""
+"Bacio foto in\n"
+"                                video"
+
+#: payments/templates/payments/checkout.html:192
+msgid ""
+"Include a kiss photo in the\n"
+"                                video"
+msgstr "Includi una foto del bacio nel video"
+
+#: payments/templates/payments/checkout.html:203
+msgid "Additional message"
+msgstr "Messaggio aggiuntivo"
+
+#: payments/templates/payments/checkout.html:204
+msgid "Add extra text in the video"
+msgstr "Aggiungi testo extra nel video"
+
+#: payments/templates/payments/checkout.html:211
+msgid ""
+"Additional\n"
+"                                message"
+msgstr ""
+"Messaggio\n"
+"                                aggiuntivo"
+
+#: payments/templates/payments/checkout.html:213
+msgid ""
+"Add extra text in the\n"
+"                                video"
+msgstr "Aggiungi testo extra nel video"
+
+#: payments/templates/payments/checkout.html:220
+msgid "Nice Alek you finally got a girlfriend"
+msgstr "Bella Alek, finalmente hai trovato una fidanzata"
+
+#: payments/templates/payments/checkout.html:229
+msgid "Express delivery"
+msgstr "Consegna rapida"
+
+#: payments/templates/payments/checkout.html:230
+msgid "Delivery under 8 hours"
+msgstr "Consegna entro 8 ore"
+
+#: payments/templates/payments/checkout.html:237
+msgid ""
+"Express\n"
+"                                delivery"
+msgstr ""
+"Express\n"
+"                                consegna"
+
+#: payments/templates/payments/checkout.html:239
+msgid ""
+"Delivery under 8\n"
+"                                hours"
+msgstr "Consegna entro 8 ore"
+
+#: payments/templates/payments/checkout.html:250
+msgid "Reels format"
+msgstr "Format dei rulli"
+
+#: payments/templates/payments/checkout.html:251
+msgid "Video filmed in reels format"
+msgstr "Video girato in formato reels"
+
+#: payments/templates/payments/checkout.html:258
+msgid ""
+"Reels\n"
+"                                format"
+msgstr ""
+"Bobine\n"
+"                                formato"
+
+#: payments/templates/payments/checkout.html:260
+msgid ""
+"Video filmed in reels\n"
+"                                format"
+msgstr "Video girato in formato reels"
+
+#: payments/templates/payments/checkout.html:271
+msgid "Horizontal format"
+msgstr "Format orizzontale"
+
+#: payments/templates/payments/checkout.html:272
+msgid "Video filmed in horizontal format"
+msgstr "Video girato in formato orizzontale"
+
+#: payments/templates/payments/checkout.html:279
+msgid ""
+"Horizontal\n"
+"                                format"
+msgstr ""
+"Orizzontale\n"
+"                                formato"
+
+#: payments/templates/payments/checkout.html:281
+msgid ""
+"Video filmed in horizontal\n"
+"                                format"
+msgstr "Video girato in formato orizzontale"
+
+#: payments/templates/payments/checkout.html:292
+msgid "Professional editing"
+msgstr "Editing professionale"
+
+#: payments/templates/payments/checkout.html:293
+msgid "Special edit from our professional video editor"
+msgstr "Modifica speciale dal nostro montatore video professionale"
+
+#: payments/templates/payments/checkout.html:300
+msgid ""
+"Professional\n"
+"                                editing"
+msgstr ""
+"Professionale\n"
+"                                modifica"
+
+#: payments/templates/payments/checkout.html:302
+msgid ""
+"Special edit from our professional\n"
+"                                video editor"
+msgstr ""
+"Modifica speciale dal nostro professionista\n"
+"                                montatore video"
+
+#: payments/templates/payments/checkout.html:320
+#, python-format
+msgid ""
+"\n"
+"                            %(chosen_product.emoji)s %(name)s"
+msgstr ""
+"\n"
+"🇮🇹 %(name)s"
+
+#: payments/templates/payments/checkout.html:326
+msgid ""
+"Message to\n"
+"                        say"
+msgstr ""
+"Messaggio da\n"
+"                        dire"
+
+#: payments/templates/payments/checkout.html:336
+msgid ""
+"\n"
+"                    Total"
+msgstr ""
+"\n"
+"Totale"
+
+#: payments/templates/payments/checkout.html:352
+msgid "Pay"
+msgstr "Pagare"
+
+#: payments/templates/payments/checkout.html:362
+msgid ""
+"How to\n"
+"                Order"
+msgstr "Come ordinare"
+
+#: payments/templates/payments/checkout.html:370
+msgid "Your browser does not support the video tag."
+msgstr "Il tuo browser non supporta il tag video."

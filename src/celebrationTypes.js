@@ -7,6 +7,7 @@ function initCelebrationTypes() {
   const celebrationModalCloseButton = document.querySelector(
     "#celebrationModalCloseButton",
   );
+  const celebrationTypesEls = document.querySelectorAll(".celebrationType");
 
   if (
     !button ||
@@ -32,6 +33,12 @@ function initCelebrationTypes() {
     if (event.target === celebrationModalWithOverlay) {
       celebrationModalWithOverlay.classList.add("hidden");
     }
+  });
+
+  celebrationTypesEls.forEach((celebrationTypeEl) => {
+    celebrationTypeEl.addEventListener("click", () => {
+      celebrationModalWithOverlay.classList.add("hidden");
+    });
   });
 }
 

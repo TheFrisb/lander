@@ -1,0 +1,846 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-19 14:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: lander/templates/lander/base.html:70
+msgid "OFF"
+msgstr "KAPALI"
+
+#: lander/templates/lander/base.html:72
+msgid ""
+"\n"
+"                        Limited Time Offer"
+msgstr ""
+"\n"
+"Sınırlı Zaman Teklifi"
+
+#: lander/templates/lander/base.html:91
+msgid "Starting from"
+msgstr "Başlangıçta"
+
+#: lander/templates/lander/base.html:93 lander/templates/lander/base.html:98
+#: lander/templates/lander/base.html:103 lander/templates/lander/base.html:108
+#: lander/templates/lander/base.html:113 lander/templates/lander/base.html:115
+#: lander/templates/lander/base.html:120 lander/templates/lander/base.html:125
+#: lander/templates/lander/base.html:130 lander/templates/lander/base.html:135
+#: lander/templates/lander/base.html:140 lander/templates/lander/base.html:145
+msgid ""
+"Flash\n"
+"                    Sale"
+msgstr ""
+"Anlık\n"
+"                    Satış"
+
+#: lander/templates/lander/base.html:95 lander/templates/lander/base.html:100
+#: lander/templates/lander/base.html:105 lander/templates/lander/base.html:110
+#: lander/templates/lander/base.html:117 lander/templates/lander/base.html:122
+#: lander/templates/lander/base.html:127 lander/templates/lander/base.html:132
+#: lander/templates/lander/base.html:137 lander/templates/lander/base.html:142
+msgid ""
+"Starting\n"
+"                    from"
+msgstr ""
+"Başlangıç\n"
+"                    yaparak"
+
+#: lander/templates/lander/product_page.html:9
+msgid "Premium Celebration Services"
+msgstr "Premium Kutlama Hizmetleri"
+
+#: lander/templates/lander/product_page.html:11
+msgid ""
+"Surprise\n"
+"                        your closest"
+msgstr ""
+"Sürpriz\n"
+"                        en yakınınızı"
+
+#: lander/templates/lander/product_page.html:13
+msgid "friends"
+msgstr "arkadaşlar"
+
+#: lander/templates/lander/product_page.html:14
+msgid "and"
+msgstr "ve"
+
+#: lander/templates/lander/product_page.html:14
+msgid ""
+"\n"
+"                            relatives"
+msgstr ""
+"\n"
+"akrabalar"
+
+#: lander/templates/lander/product_page.html:15
+msgid ""
+"with a\n"
+"                            unique and exciting celebration for their special moments"
+msgstr "özel anlarını kutlamak için eşsiz ve heyecan verici bir kutlama ile"
+
+#: lander/templates/lander/product_page.html:28
+msgid ""
+"\n"
+"                            24hr Express Delivery"
+msgstr ""
+"\n"
+"24 saat Express Teslimat"
+
+#: lander/templates/lander/product_page.html:36
+msgid ""
+"Look at the surprises we\n"
+"            do"
+msgstr ""
+"Bakın sürprizlere\n"
+"            yapıyoruz"
+
+#: lander/templates/lander/product_page.html:50
+msgid ""
+"Your browser does not support the video\n"
+"                                        tag."
+msgstr "Tarayıcınız video etiketini desteklememektedir."
+
+#: lander/templates/lander/product_page.html:57
+#: lander/templates/lander/product_page.html:202
+#: payments/templates/payments/checkout.html:65
+#, python-format
+msgid "%(name)s"
+msgstr "%(name)s"
+
+#: lander/templates/lander/product_page.html:107
+msgid ""
+"Our guys and girls talk at your\n"
+"                    language!"
+msgstr "Bizim çocuklar ve kızlar senin dilinde konuşuyor!"
+
+#: lander/templates/lander/product_page.html:119
+msgid ""
+"Song by your\n"
+"                    choice!"
+msgstr "Şarkı senin seçiminle!"
+
+#: lander/templates/lander/product_page.html:131
+msgid ""
+"Click to see all celebration\n"
+"                        types!"
+msgstr "Tüm kutlama türlerini görmek için tıklayın!"
+
+#: lander/templates/lander/product_page.html:145
+msgid ""
+"Choose Your Perfect\n"
+"                Team"
+msgstr "Mükemmel Takımını Seç"
+
+#: lander/templates/lander/product_page.html:147
+msgid ""
+"Select from our expert celebration\n"
+"                teams, each specially\n"
+"                trained to create unforgettable moments for your special occasions."
+msgstr ""
+"Uzman kutlama ekiplerimizden birini seçin, her biri %(name)s için unutulmaz "
+"anlar yaratmaya özel olarak eğitilmiştir."
+
+#: lander/templates/lander/product_page.html:163
+#, python-format
+msgid ""
+"\n"
+"                                    %(name)s"
+msgstr ""
+"\n"
+"%(name)s"
+
+#: lander/templates/lander/product_page.html:166
+#: payments/templates/payments/checkout.html:67
+#, python-format
+msgid ""
+"\n"
+"                                %(description)s"
+msgstr ""
+"\n"
+"%(description)s"
+
+#: lander/templates/lander/product_page.html:232
+#, python-format
+msgid "%(description)s"
+msgstr "%(description)s"
+
+#: lander/templates/lander/product_page.html:242
+#, python-format
+msgid ""
+"\n"
+"                                        %(name)s"
+msgstr ""
+"\n"
+"%(name)s"
+
+#: lander/templates/lander/product_page.html:245
+#, python-format
+msgid ""
+"\n"
+"                                        %(description)s"
+msgstr ""
+"\n"
+"%(description)s"
+
+#: lander/templates/lander/product_page.html:277
+msgid "Add to cart"
+msgstr "Sepete ekle"
+
+#: lander/templates/lander/product_page.html:287
+#, python-format
+msgid "100%% Satisfaction Guaranteed"
+msgstr "%100 Memnuniyet Garantili"
+
+#: lander/templates/lander/product_page.html:297
+msgid ""
+"What Our\n"
+"                    Customers Say"
+msgstr "Müşterilerimiz Ne Diyor"
+
+#: lander/templates/lander/product_page.html:326
+msgid "verified reviews"
+msgstr "doğrulanmış incelemeler"
+
+#: lander/templates/lander/product_page.html:344
+#, python-format
+msgid ""
+"\n"
+"                                            %(content)s\n"
+"                                        "
+msgstr ""
+"\n"
+"%(content)s"
+
+#: lander/templates/lander/product_page.html:384
+msgid ""
+"About\n"
+"            us"
+msgstr "Hakkımızda"
+
+#: lander/templates/lander/product_page.html:387
+msgid ""
+"Since 2020, we've been bringing joy and\n"
+"                excitement to celebrations\n"
+"                across the country. Our diverse teams of celebration specialists combine creativity, energy, and\n"
+"                professionalism to create unforgettable moments. From intimate gatherings to grand events, we\n"
+"                personalize\n"
+"                every celebration to match your style and vision."
+msgstr ""
+"2020'den beri, ülkemizin dört bir yanındaki kutlamalara neşe ve heyecan "
+"getiriyoruz. Kutlama uzmanlarımızın çeşitli ekipleri, yaratıcılığı, enerjiyi"
+" ve profesyonelliği birleştirerek unutulmaz anlar yaratıyor. Samimi "
+"toplantılardan büyük etkinliklere kadar, her kutlamayı tarzınıza ve "
+"vizyonunuza uygun hale getiriyoruz."
+
+#: lander/templates/lander/product_page.html:404
+msgid ""
+"Expert\n"
+"                    Teams"
+msgstr ""
+"Uzman\n"
+"                    Ekipler"
+
+#: lander/templates/lander/product_page.html:406
+msgid ""
+"Our celebration specialists bring 10+ years of combined\n"
+"                    experience to every\n"
+"                    event"
+msgstr ""
+"Uzman kutlama uzmanlarımız her etkinliğe 10 yıldan fazla birleşik deneyim "
+"getiriyor."
+
+#: lander/templates/lander/product_page.html:409
+msgid ""
+"20+ Certified\n"
+"                    Specialists"
+msgstr ""
+"20+ Sertifikalı\n"
+"                    Uzman"
+
+#: lander/templates/lander/product_page.html:422
+msgid ""
+"Magical moments created for families across the country\n"
+"                    since 2020"
+msgstr ""
+"Ülke genelinde aileler için yaratılan sihirli anlar\n"
+"                    2020'den beri"
+
+#: lander/templates/lander/product_page.html:424
+#, python-format
+msgid ""
+"98%% Success\n"
+"                    Rate"
+msgstr "Başarı Oranı: 98%%"
+
+#: lander/templates/lander/product_page.html:436
+msgid ""
+"Unique\n"
+"                    Experience"
+msgstr ""
+"Özgün\n"
+"                    Deneyim"
+
+#: lander/templates/lander/product_page.html:438
+msgid ""
+"Every celebration is uniquely crafted to match your style\n"
+"                    and vision"
+msgstr ""
+"Her kutlama, tarzınıza ve vizyonunuza uygun olarak özel olarak "
+"tasarlanmıştır."
+
+#: lander/templates/lander/product_page.html:440
+msgid ""
+"100+ Event\n"
+"                    Styles"
+msgstr ""
+"100+ Etkinlik\n"
+"                    Stilleri"
+
+#: lander/templates/lander/product_page.html:450
+msgid ""
+"Celebration\n"
+"                    Types"
+msgstr ""
+"Kutlama\n"
+"                    Türleri"
+
+#: lander/templates/lander/product_page.html:452
+msgid ""
+"Choose from our wide range of celebration\n"
+"                        options"
+msgstr "Geniş kutlama seçeneklerimizden birini seçin"
+
+#: lander/templates/lander/product_page.html:466
+#, python-format
+msgid ""
+"\n"
+"                                %(name)s"
+msgstr ""
+"\n"
+"%(name)s"
+
+#: lander/views.py:18
+msgid ""
+"Ordered it for my brother and his wife for their anniversary and it was "
+"completed overnight 🙏! They loved it. Great idea for birthdays, "
+"anniversaries, etc."
+msgstr ""
+"Kardeşim ve eşinin yıldönümleri için sipariş verdim ve bir gecede tamamlandı"
+" 🙏! Çok beğendiler. Doğum günleri, yıldönümleri vb. için harika bir fikir."
+
+#: lander/views.py:32
+msgid ""
+"Great video! Made my day. This is an amazing idea! I don't know how you guys"
+" came up with this, but keep up with the good work!"
+msgstr ""
+"Harika video! Benim günümü aydınlattı. Bu inanılmaz bir fikir! Bu nasıl "
+"aklınıza geldi bilmiyorum, ama iyi işlere devam edin!"
+
+#: lander/views.py:46
+msgid ""
+"You guys made my sister's new car celebration so fun, bright and memorable! "
+"She loved it so much. Actually everybody loved it. Thank you for the amazing"
+" vibes, beautiful smiles and the kisses lol. Sending back a lot of joy and "
+"love to this awesome team ❤️. The order was made in the evening, and the "
+"video was ready in the morning. Many thanks :)"
+msgstr ""
+"Sizler kardeşimin yeni araba kutlamasını çok eğlenceli, parlak ve unutulmaz "
+"yaptınız! Çok sevdi. Aslında herkes çok sevdi. Harika enerji, güzel "
+"gülücükler ve öpücükler için teşekkür ederim haha. Bu harika ekibe çokça "
+"sevinç ve sevgi gönderiyorum ❤️. Sipariş akşam yapıldı ve video sabah "
+"hazırdı. Çok teşekkürler :)"
+
+#: lander/views.py:60
+msgid ""
+"Got the video exceptionally fast with high quality of work. Mom loved it. "
+"Great idea, and very professional and funny!"
+msgstr ""
+"Videoyu olağanüstü hızlı ve yüksek kalitede aldım. Annem çok beğendi. Harika"
+" bir fikir, çok profesyonel ve komik!"
+
+#: lander/views.py:74
+msgid ""
+"Got mine in less than 22 hrs i love you guys!!! Will order more funny videos"
+" for our friends!"
+msgstr ""
+"22 saatten az bir sürede benimkini aldım, sizi seviyorum!!! Arkadaşlarımız "
+"için daha fazla komik video siparişi vereceğim!"
+
+#: lander/views.py:88
+msgid "Perfect gift! Keep up with the good work guys!"
+msgstr "Mükemmel hediye! İyi işlere devam edin adamlar!"
+
+#: lander/views.py:102
+msgid ""
+"Love it, got my video after one day of ordering. Definitely will order again"
+" 😀"
+msgstr ""
+"Çok sevdim, videomu sipariş verdikten bir gün sonra aldım. Kesinlikle tekrar"
+" sipariş vereceğim 😀"
+
+#: lander/views.py:116
+msgid ""
+"THANK YOU SO MUCH. I love my video- I can't wait to show it to my mum. These"
+" guys are so energetic and my video was made so quickly! AMAZING"
+msgstr ""
+"ÇOK TEŞEKKÜR EDERİM. Videomu çok sevdim - onu anneme göstermek için "
+"sabırsızlanıyorum. Bu adamlar çok enerjik ve videom çok hızlı yapıldı! "
+"HARİKA"
+
+#: lander/views.py:130
+msgid ""
+"Wow, amazed at the quality, such a wonderful present for someone's "
+"graduation, will definitely order again."
+msgstr ""
+"Vay be, kaliteye hayran kaldım, birinin mezuniyeti için harika bir hediye, "
+"kesinlikle tekrar sipariş vereceğim."
+
+#: lander/views.py:144
+msgid ""
+"Thank you guys, this is so-so good! Extraordinary performance and delivery "
+"from your side! Keep up the good work!"
+msgstr ""
+"Teşekkür ederim arkadaşlar, bu çok çok iyi! Olağanüstü performans ve "
+"teslimatınızdan! İyi çalışmaya devam edin!"
+
+#: lander/views.py:158
+msgid ""
+"Perfect !!! Great performance, super funny. Done super fast in 1 day,Thank "
+"you girls so much! My grandad loved it, he said it was very sweet and he was"
+" so happy!"
+msgstr ""
+"Mükemmel !!! Harika performans, çok komik. 1 gün içinde süper hızlı yapıldı,"
+" Çok teşekkür ederim kızlar! Dedem çok beğendi, çok tatlı olduğunu ve çok "
+"mutlu olduğunu söyledi!"
+
+#: lander/views.py:172
+msgid ""
+"They are amazing, my partner is watching the video from them everyday. Thank"
+" you"
+msgstr "Onlar harika, ortağım her gün onlardan video izliyor. Teşekkür ederim"
+
+#: lander/views.py:186
+msgid ""
+"Love the video! Super satisfied with the humor and the creativity of the "
+"video. I highly recommend them."
+msgstr ""
+"Videoyu çok sevdim! Videonun mizahı ve yaratıcılığından çok memnun kaldım. "
+"Onları şiddetle tavsiye ederim."
+
+#: lander/views.py:200
+msgid ""
+"Very professional and amazing! Thanks for the laugh and love guys! Keep "
+"spreading joy!"
+msgstr ""
+"Çok profesyonel ve harika! Güldüğüm ve sevdiğim için teşekkürler! Neşeyi "
+"yaymaya devam edin!"
+
+#: lander/views.py:214
+msgid ""
+"I picked the love team, and it was very very lovely and fun. Delivery was "
+"less than 24 hours. I am fully satisfied with the result!"
+msgstr ""
+"Aşk ekibini seçtim ve çok çok sevimli ve eğlenceliydi. Teslimat 24 saatten "
+"az sürdü. Sonuçtan tamamen memnunum!"
+
+#: lander/views.py:228
+msgid ""
+"Amazing and very quickly sent out to me even without paying for the rush. "
+"Great quality. Very funny. Thanks so much :)"
+msgstr ""
+"Harika ve çok hızlı bir şekilde bana gönderildi, hatta acele ödemesi olmadan"
+" bile. Harika kalite. Çok komik. Çok teşekkürler :)"
+
+#: lander/views.py:242
+msgid ""
+"Order came a day after ordering, very happy with the result and my brother "
+"enjoyed it."
+msgstr ""
+"Sipariş, sipariş verdikten bir gün sonra geldi, sonuçtan çok memnunum ve "
+"kardeşim de beğendi."
+
+#: lander/views.py:256
+msgid ""
+"This was so fun! We loved it. I wanna order a thousand more! Great idea and "
+"so much happiness!"
+msgstr ""
+"Bu çok eğlenceliydi! Çok beğendik. Bin tane daha sipariş vermek istiyorum! "
+"Harika bir fikir ve çok mutluluk!"
+
+#: lander/views.py:270
+msgid "Thanks for the best birthday video. I feel so happy"
+msgstr ""
+"En iyi doğum günü videosu için teşekkür ederim. Çok mutlu hissediyorum."
+
+#: lander/views.py:284
+msgid ""
+"I placed an order on the 15th of march and the very next day i got my video "
+"greeting. I'm very happy with the result. Thank you so much. All the best, "
+"Luka"
+msgstr ""
+"15 Mart'ta bir sipariş verdim ve ertesi gün video tebrikimi aldım. Sonuçtan "
+"çok memnunum. Çok teşekkür ederim. İyi dileklerimle, Luka"
+
+#: lander/views.py:299
+msgid "Birthday"
+msgstr "Doğum günü"
+
+#: lander/views.py:311
+msgid "Mother's Day"
+msgstr "Anneler Günü"
+
+#: lander/views.py:323
+msgid "Graduation"
+msgstr "Mezuniyet"
+
+#: lander/views.py:335
+msgid "Father's Day"
+msgstr "Babalar Günü"
+
+#: lander/views.py:347
+msgid "New Car"
+msgstr "Yeni Araba"
+
+#: lander/views.py:359
+msgid "Newborn Baby"
+msgstr "Yeni Doğan Bebek"
+
+#: lander/views.py:371
+msgid "New House"
+msgstr "Yeni Ev"
+
+#: lander/views.py:383
+msgid "Christmas"
+msgstr "Noel"
+
+#: lander/views.py:395
+msgid "Easter"
+msgstr "Paskalya"
+
+#: lander/views.py:407
+msgid "Ramadan"
+msgstr "Ramazan"
+
+#: lander/views.py:419
+msgid "Anniversary"
+msgstr "Yıl dönümü"
+
+#: lander/views.py:431
+msgid "Car License"
+msgstr "Araç Lisansı"
+
+#: lander/views.py:443
+msgid "Retirement"
+msgstr "Emeklilik"
+
+#: lander/views.py:455
+msgid "Work Promotion"
+msgstr "İş Yükseltme"
+
+#: lander/views.py:467
+msgid "Your Choice"
+msgstr "Senin Seçimin"
+
+#: payments/templates/payments/checkout.html:7
+msgid ""
+"Complete Your\n"
+"            Order "
+msgstr "Siparişinizi Tamamlayın"
+
+#: payments/templates/payments/checkout.html:22
+#, python-format
+msgid ""
+"\n"
+"                            %(name)s"
+msgstr ""
+"\n"
+"%(name)s"
+
+#: payments/templates/payments/checkout.html:25
+#, python-format
+msgid ""
+"\n"
+"                            %(description)s"
+msgstr ""
+"\n"
+"%(description)s"
+
+#: payments/templates/payments/checkout.html:29
+msgid "Base price"
+msgstr "Taban fiyatı"
+
+#: payments/templates/payments/checkout.html:51
+#, python-format
+msgid ""
+"\n"
+"                    data-product-name=\"%(product.emoji)s %(name)s\"\n"
+"                    data-product-description=\"%(description)s\"\n"
+"                        "
+msgstr ""
+"\n"
+"data-product-name=\"%(product.emoji)s %(name)s\"\n"
+"data-product-description=\"%(description)s\""
+
+#: payments/templates/payments/checkout.html:95
+msgid "Delivery Email"
+msgstr "Teslimat E-postası"
+
+#: payments/templates/payments/checkout.html:101
+msgid ""
+"Your video will be delivered to this email\n"
+"                    address"
+msgstr "Videonuz bu e-posta adresine teslim edilecektir."
+
+#: payments/templates/payments/checkout.html:110
+msgid "Message to say"
+msgstr "Mesajınızı iletmek için"
+
+#: payments/templates/payments/checkout.html:117
+msgid ""
+"Message to\n"
+"                            say"
+msgstr "Mesajınızı söylemek için"
+
+#: payments/templates/payments/checkout.html:119
+msgid ""
+"Text you want us to\n"
+"                                say"
+msgstr ""
+"Metin çevirisi:\n"
+"Söylememizi istediğiniz metin"
+
+#: payments/templates/payments/checkout.html:122
+msgid ""
+"\n"
+"                            Included"
+msgstr ""
+"\n"
+"Dahilindedir"
+
+#: payments/templates/payments/checkout.html:126
+msgid "Happy birthday Alex"
+msgstr "Alex'e mutlu yıllar"
+
+#: payments/templates/payments/checkout.html:134
+msgid "Song of choice"
+msgstr "Seçilen şarkı"
+
+#: payments/templates/payments/checkout.html:135
+msgid "Add your preferred song"
+msgstr "Tercih ettiğiniz şarkınızı ekleyin"
+
+#: payments/templates/payments/checkout.html:142
+msgid ""
+"Song of\n"
+"                                choice"
+msgstr "Şarkı seçimi"
+
+#: payments/templates/payments/checkout.html:144
+msgid ""
+"Add your preferred\n"
+"                                song"
+msgstr "Tercih ettiğiniz şarkıyı ekleyin"
+
+#: payments/templates/payments/checkout.html:159
+msgid "Attach photo to be shown in the video"
+msgstr "Videoya gösterilmek üzere fotoğraf ekleyin"
+
+#: payments/templates/payments/checkout.html:166
+msgid ""
+"Photo in\n"
+"                                video"
+msgstr ""
+"Foto içinde\n"
+"                                video"
+
+#: payments/templates/payments/checkout.html:168
+msgid ""
+"Attach photo to be shown in the\n"
+"                                video"
+msgstr "Videonun içinde gösterilecek fotoğrafı ekleyin"
+
+#: payments/templates/payments/checkout.html:182
+msgid "Kiss photo in video"
+msgstr "Video içinde öpüşme fotoğrafı"
+
+#: payments/templates/payments/checkout.html:183
+msgid "Include a kiss photo in the video"
+msgstr "Videoda bir öpücük fotoğrafı ekleyin"
+
+#: payments/templates/payments/checkout.html:190
+msgid ""
+"Kiss photo in\n"
+"                                video"
+msgstr ""
+"Fotoyu öp\n"
+"                                video"
+
+#: payments/templates/payments/checkout.html:192
+msgid ""
+"Include a kiss photo in the\n"
+"                                video"
+msgstr "Videoda bir öpücük fotoğrafı ekleyin"
+
+#: payments/templates/payments/checkout.html:203
+msgid "Additional message"
+msgstr "Ek mesaj"
+
+#: payments/templates/payments/checkout.html:204
+msgid "Add extra text in the video"
+msgstr "Videoda ekstra metin ekle"
+
+#: payments/templates/payments/checkout.html:211
+msgid ""
+"Additional\n"
+"                                message"
+msgstr "Ek mesaj"
+
+#: payments/templates/payments/checkout.html:213
+msgid ""
+"Add extra text in the\n"
+"                                video"
+msgstr "Videoya ekstra metin ekle"
+
+#: payments/templates/payments/checkout.html:220
+msgid "Nice Alek you finally got a girlfriend"
+msgstr "Güzel Alek, sonunda bir kız arkadaş edindin."
+
+#: payments/templates/payments/checkout.html:229
+msgid "Express delivery"
+msgstr "Hızlı teslimat"
+
+#: payments/templates/payments/checkout.html:230
+msgid "Delivery under 8 hours"
+msgstr "8 saat içinde teslim"
+
+#: payments/templates/payments/checkout.html:237
+msgid ""
+"Express\n"
+"                                delivery"
+msgstr ""
+"Hızlı\n"
+"                                teslimat"
+
+#: payments/templates/payments/checkout.html:239
+msgid ""
+"Delivery under 8\n"
+"                                hours"
+msgstr "8 saat içinde teslim"
+
+#: payments/templates/payments/checkout.html:250
+msgid "Reels format"
+msgstr "Makaralar formatı"
+
+#: payments/templates/payments/checkout.html:251
+msgid "Video filmed in reels format"
+msgstr "Video, makara formatında çekildi."
+
+#: payments/templates/payments/checkout.html:258
+msgid ""
+"Reels\n"
+"                                format"
+msgstr ""
+"Makaralar\n"
+"                                biçimi"
+
+#: payments/templates/payments/checkout.html:260
+msgid ""
+"Video filmed in reels\n"
+"                                format"
+msgstr "Video, makara formatında çekildi."
+
+#: payments/templates/payments/checkout.html:271
+msgid "Horizontal format"
+msgstr "Yatay format"
+
+#: payments/templates/payments/checkout.html:272
+msgid "Video filmed in horizontal format"
+msgstr "Video yatay formatta çekildi."
+
+#: payments/templates/payments/checkout.html:279
+msgid ""
+"Horizontal\n"
+"                                format"
+msgstr ""
+"Yatay\n"
+"                                format"
+
+#: payments/templates/payments/checkout.html:281
+msgid ""
+"Video filmed in horizontal\n"
+"                                format"
+msgstr "Video yatay formatta çekildi"
+
+#: payments/templates/payments/checkout.html:292
+msgid "Professional editing"
+msgstr "Profesyonel düzenleme"
+
+#: payments/templates/payments/checkout.html:293
+msgid "Special edit from our professional video editor"
+msgstr "Uzman video düzenleyicimizden özel düzenleme"
+
+#: payments/templates/payments/checkout.html:300
+msgid ""
+"Professional\n"
+"                                editing"
+msgstr "Profesyonel düzenleme"
+
+#: payments/templates/payments/checkout.html:302
+msgid ""
+"Special edit from our professional\n"
+"                                video editor"
+msgstr "Uzman video düzenleyicimizden özel düzenleme"
+
+#: payments/templates/payments/checkout.html:320
+#, python-format
+msgid ""
+"\n"
+"                            %(chosen_product.emoji)s %(name)s"
+msgstr ""
+"\n"
+"%(chosen_product.emoji)s %(name)s"
+
+#: payments/templates/payments/checkout.html:326
+msgid ""
+"Message to\n"
+"                        say"
+msgstr ""
+"Mesaj\n"
+"                        söylemek"
+
+#: payments/templates/payments/checkout.html:336
+msgid ""
+"\n"
+"                    Total"
+msgstr ""
+"\n"
+"Toplam"
+
+#: payments/templates/payments/checkout.html:352
+msgid "Pay"
+msgstr "Ödeme"
+
+#: payments/templates/payments/checkout.html:362
+msgid ""
+"How to\n"
+"                Order"
+msgstr "Nasıl Sipariş Verilir"
+
+#: payments/templates/payments/checkout.html:370
+msgid "Your browser does not support the video tag."
+msgstr "Tarayıcınız video etiketini desteklemiyor."

@@ -42,5 +42,5 @@ node_modules/
 #tailwind_output.css
 
 # Bundled JS
-#core_v6.bundle.js
+#core_v7.bundle.js
 **/migrations

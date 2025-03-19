@@ -222,6 +222,13 @@
 
 
 
+
+
+
+
+
+
+
                                     {% blocktranslate with description=product.description %}{{ description }}{% endblocktranslate %}"
                             data-product-regular-price="{{ product.regular_price }}"
                             data-product-sale-price="{{ product.discount_price }}"
@@ -335,18 +342,14 @@
                                 <div class="relative">
                                     <p class="text-gray-700 text-lg leading-relaxed mb-6">
                                         {% blocktranslate with content=testimonial.content %}
-                                            {{ content }}{% endblocktranslate %}</p>
+                                            {{ content }}
+                                        {% endblocktranslate %}
+                                    </p>
                                     <div class="flex items-center gap-4">
                                 <span
-                                        class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary font-bold text-xl">{{ testimonial.name_initial }}</span>
+                                        class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary font-bold text-xl">{{ testimonial.name|slice:":1" }}</span>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-text-dark">{{ testimonial.name }}</h4>
-                                            <div class="flex items-center gap-2 mt-1"><span
-
-                                                    class="text-sm font-medium text-primary">⛰️ {{ testimonial.product.name }}</span><span
-                                                    class="text-sm text-gray-400">•</span><span
-                                                    class="text-sm text-gray-600">€{{ testimonial.product.discount_price }}</span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -458,7 +461,7 @@
             </div>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {% for celebration in celebration_types %}
-                    <div class="relative group cursor-pointer">
+                    <div class="relative group cursor-pointer celebrationType">
                         <div class="relative p-4 text-center bg-orange-50 rounded-xl hover:shadow-md transition-all hover:-translate-y-0.5 border border-orange-200">
                             <span class="font-medium text-orange-700">{% blocktranslate with name=celebration.name %}
                                 {{ name }}{% endblocktranslate %}</span></div>
