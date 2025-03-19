@@ -152,7 +152,7 @@ LANGUAGE_CODE = "en-us"
 LANGUAGES = [
     ("en-us", "English"),
     ("de", "German"),
-    ("sr_LAtn", "Serbian"),
+    ("sr", "Serbian"),
     ("es", "Spanish"),
     ("fr", "French"),
     ("ar", "Arabic"),
