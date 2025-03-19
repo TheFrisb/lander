@@ -16,21 +16,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
 #: lander/templates/lander/base.html:70
 msgid "OFF"
-msgstr ""
+msgstr "ISKLJUČENO"
 
 #: lander/templates/lander/base.html:72
 msgid ""
 "\n"
 "                        Limited Time Offer"
 msgstr ""
+"\n"
+"Ograničena ponuda."
 
 #: lander/templates/lander/base.html:91
 msgid "Starting from"
-msgstr ""
+msgstr "Počevši od"
 
 #: lander/templates/lander/base.html:93 lander/templates/lander/base.html:98
 #: lander/templates/lander/base.html:103 lander/templates/lander/base.html:108
@@ -42,6 +44,8 @@ msgid ""
 "Flash\n"
 "                    Sale"
 msgstr ""
+"Brza\n"
+"                    Rasprodaja"
 
 #: lander/templates/lander/base.html:95 lander/templates/lander/base.html:100
 #: lander/templates/lander/base.html:105 lander/templates/lander/base.html:110
@@ -52,94 +56,108 @@ msgid ""
 "Starting\n"
 "                    from"
 msgstr ""
+"Počevši\n"
+"                    od"
 
 #: lander/templates/lander/product_page.html:9
 msgid "Premium Celebration Services"
-msgstr ""
+msgstr "Premium usluge proslave"
 
 #: lander/templates/lander/product_page.html:11
 msgid ""
 "Surprise\n"
 "                        your closest"
 msgstr ""
+"Iznenadite\n"
+"                        svoje najbliže"
 
 #: lander/templates/lander/product_page.html:13
 msgid "friends"
-msgstr ""
+msgstr "prijatelji"
 
 #: lander/templates/lander/product_page.html:14
 msgid "and"
-msgstr ""
+msgstr "i"
 
 #: lander/templates/lander/product_page.html:14
 msgid ""
 "\n"
 "                            relatives"
 msgstr ""
+"\n"
+"rođaci"
 
 #: lander/templates/lander/product_page.html:15
 msgid ""
 "with a\n"
-"                            unique and exciting celebration for their "
-"special moments"
+"                            unique and exciting celebration for their special moments"
 msgstr ""
+"sa\n"
+"                            jedinstvenom i uzbudljivom proslavom za njihove posebne trenutke"
 
 #: lander/templates/lander/product_page.html:28
 msgid ""
 "\n"
 "                            24hr Express Delivery"
 msgstr ""
+"\n"
+"Isporuka za 24 sata"
 
 #: lander/templates/lander/product_page.html:36
 msgid ""
 "Look at the surprises we\n"
 "            do"
 msgstr ""
+"Pogledajte iznenađenja koja\n"
+"            priređujemo"
 
 #: lander/templates/lander/product_page.html:50
 msgid ""
 "Your browser does not support the video\n"
 "                                        tag."
-msgstr ""
+msgstr "Vaš pretraživač ne podržava video oznaku."
 
 #: lander/templates/lander/product_page.html:57
 #: lander/templates/lander/product_page.html:202
 #: payments/templates/payments/checkout.html:65
 #, python-format
 msgid "%(name)s"
-msgstr ""
+msgstr "%(name)s"
 
 #: lander/templates/lander/product_page.html:107
 msgid ""
 "Our guys and girls talk at your\n"
 "                    language!"
-msgstr ""
+msgstr "Naši momci i devojke govore na tvom jeziku!"
 
 #: lander/templates/lander/product_page.html:119
 msgid ""
 "Song by your\n"
 "                    choice!"
 msgstr ""
+"Pesma po tvom\n"
+"                    izboru!"
 
 #: lander/templates/lander/product_page.html:131
 msgid ""
 "Click to see all celebration\n"
 "                        types!"
-msgstr ""
+msgstr "Kliknite da vidite sve vrste proslava!"
 
 #: lander/templates/lander/product_page.html:145
 msgid ""
 "Choose Your Perfect\n"
 "                Team"
-msgstr ""
+msgstr "Izaberite svoj savršeni tim"
 
 #: lander/templates/lander/product_page.html:147
 msgid ""
 "Select from our expert celebration\n"
 "                teams, each specially\n"
-"                trained to create unforgettable moments for your special "
-"occasions."
+"                trained to create unforgettable moments for your special occasions."
 msgstr ""
+"Izaberite između naših stručnih timova za proslave, svaki posebno obučen da "
+"stvori nezaboravne trenutke za vaše posebne prilike."
 
 #: lander/templates/lander/product_page.html:163
 #, python-format
@@ -147,6 +165,8 @@ msgid ""
 "\n"
 "                                    %(name)s"
 msgstr ""
+"\n"
+"%(name)s"
 
 #: lander/templates/lander/product_page.html:166
 #: payments/templates/payments/checkout.html:67
@@ -155,11 +175,13 @@ msgid ""
 "\n"
 "                                %(description)s"
 msgstr ""
+"\n"
+"%(description)s"
 
 #: lander/templates/lander/product_page.html:232
 #, python-format
 msgid "%(description)s"
-msgstr ""
+msgstr "%(description)s"
 
 #: lander/templates/lander/product_page.html:242
 #, python-format
@@ -167,6 +189,8 @@ msgid ""
 "\n"
 "                                        %(name)s"
 msgstr ""
+"\n"
+"%(name)s"
 
 #: lander/templates/lander/product_page.html:245
 #, python-format
@@ -174,25 +198,29 @@ msgid ""
 "\n"
 "                                        %(description)s"
 msgstr ""
+"\n"
+"%(description)s"
 
 #: lander/templates/lander/product_page.html:277
 msgid "Add to cart"
-msgstr ""
+msgstr "Dodaj u korpu"
 
 #: lander/templates/lander/product_page.html:287
 #, python-format
 msgid "100%% Satisfaction Guaranteed"
-msgstr ""
+msgstr "100%% Zadovoljstvo zagarantovano"
 
 #: lander/templates/lander/product_page.html:297
 msgid ""
 "What Our\n"
 "                    Customers Say"
 msgstr ""
+"Šta kažu\n"
+"                    Naši klijenti"
 
 #: lander/templates/lander/product_page.html:326
 msgid "verified reviews"
-msgstr ""
+msgstr "proverene recenzije"
 
 #: lander/templates/lander/product_page.html:344
 #, python-format
@@ -201,30 +229,37 @@ msgid ""
 "                                            %(content)s\n"
 "                                        "
 msgstr ""
+"\n"
+"%(content)s"
 
 #: lander/templates/lander/product_page.html:384
 msgid ""
 "About\n"
 "            us"
-msgstr ""
+msgstr "O nama"
 
 #: lander/templates/lander/product_page.html:387
 msgid ""
 "Since 2020, we've been bringing joy and\n"
 "                excitement to celebrations\n"
-"                across the country. Our diverse teams of celebration "
-"specialists combine creativity, energy, and\n"
-"                professionalism to create unforgettable moments. From "
-"intimate gatherings to grand events, we\n"
+"                across the country. Our diverse teams of celebration specialists combine creativity, energy, and\n"
+"                professionalism to create unforgettable moments. From intimate gatherings to grand events, we\n"
 "                personalize\n"
 "                every celebration to match your style and vision."
 msgstr ""
+"Od 2020. godine, donosimo radost i uzbuđenje proslavama širom zemlje. Naši "
+"raznovrsni timovi specijalista za proslave kombinuju kreativnost, energiju i"
+" profesionalnost kako bi stvorili nezaboravne trenutke. Od intimnih "
+"okupljanja do velikih događaja, personalizujemo svaku proslavu kako bi "
+"odgovarala vašem stilu i viziji."
 
 #: lander/templates/lander/product_page.html:404
 msgid ""
 "Expert\n"
 "                    Teams"
 msgstr ""
+"Stručni\n"
+"                    Timovi"
 
 #: lander/templates/lander/product_page.html:406
 msgid ""
@@ -232,18 +267,24 @@ msgid ""
 "                    experience to every\n"
 "                    event"
 msgstr ""
+"Naši specijalisti za proslave donose preko 10 godina kombinovanog iskustva "
+"na svaki događaj."
 
 #: lander/templates/lander/product_page.html:409
 msgid ""
 "20+ Certified\n"
 "                    Specialists"
 msgstr ""
+"20+ Sertifikovanih\n"
+"                    Stručnjaka"
 
 #: lander/templates/lander/product_page.html:422
 msgid ""
 "Magical moments created for families across the country\n"
 "                    since 2020"
 msgstr ""
+"Magični trenuci stvoreni za porodice širom zemlje\n"
+"                    od 2020. godine"
 
 #: lander/templates/lander/product_page.html:424
 #, python-format
@@ -251,36 +292,44 @@ msgid ""
 "98%% Success\n"
 "                    Rate"
 msgstr ""
+"98%% Успех\n"
+"                    Стопа"
 
 #: lander/templates/lander/product_page.html:436
 msgid ""
 "Unique\n"
 "                    Experience"
 msgstr ""
+"Jedinstveno\n"
+"                    Iskustvo"
 
 #: lander/templates/lander/product_page.html:438
 msgid ""
 "Every celebration is uniquely crafted to match your style\n"
 "                    and vision"
 msgstr ""
+"Svaka proslava je jedinstveno osmišljena da odgovara vašem stilu\n"
+"                    i viziji"
 
 #: lander/templates/lander/product_page.html:440
 msgid ""
 "100+ Event\n"
 "                    Styles"
-msgstr ""
+msgstr "100+ Stilova događaja"
 
 #: lander/templates/lander/product_page.html:450
 msgid ""
 "Celebration\n"
 "                    Types"
 msgstr ""
+"Proslava\n"
+"                    Vrste"
 
 #: lander/templates/lander/product_page.html:452
 msgid ""
 "Choose from our wide range of celebration\n"
 "                        options"
-msgstr ""
+msgstr "Izaberite iz naše široke ponude opcija za proslavu"
 
 #: lander/templates/lander/product_page.html:466
 #, python-format
@@ -288,6 +337,8 @@ msgid ""
 "\n"
 "                                %(name)s"
 msgstr ""
+"\n"
+"%(name)s"
 
 #: lander/views.py:18
 msgid ""
@@ -295,114 +346,152 @@ msgid ""
 "completed overnight 🙏! They loved it. Great idea for birthdays, "
 "anniversaries, etc."
 msgstr ""
+"Naručio sam to za mog brata i njegovu suprugu za njihovu godišnjicu i "
+"završeno je preko noći 🙏! Svidelo im se. Odlična ideja za rođendane, "
+"godišnjice, itd."
 
 #: lander/views.py:32
 msgid ""
-"Great video! Made my day. This is an amazing idea! I don't know how you guys "
-"came up with this, but keep up with the good work!"
+"Great video! Made my day. This is an amazing idea! I don't know how you guys"
+" came up with this, but keep up with the good work!"
 msgstr ""
+"Odličan video! Ulepšao si mi dan. Ovo je sjajna ideja! Ne znam kako ste "
+"došli na nju, ali nastavite sa dobrim radom!"
 
 #: lander/views.py:46
 msgid ""
 "You guys made my sister's new car celebration so fun, bright and memorable! "
-"She loved it so much. Actually everybody loved it. Thank you for the amazing "
-"vibes, beautiful smiles and the kisses lol. Sending back a lot of joy and "
+"She loved it so much. Actually everybody loved it. Thank you for the amazing"
+" vibes, beautiful smiles and the kisses lol. Sending back a lot of joy and "
 "love to this awesome team ❤️. The order was made in the evening, and the "
 "video was ready in the morning. Many thanks :)"
 msgstr ""
+"Vi ste učinili proslavu sestrinog novog automobila tako zabavnom, veselom i "
+"nezaboravnom! Ona je toliko uživala u tome. Zapravo, svi su toliko uživali. "
+"Hvala vam na neverovatnoj energiji, prelepim osmesima i poljupcima haha. "
+"Šaljem puno radosti i ljubavi ovom sjajnom timu ❤️. Porudžbina je bila "
+"napravljena uveče, a video je bio spreman ujutru. Hvala puno :)"
 
 #: lander/views.py:60
 msgid ""
 "Got the video exceptionally fast with high quality of work. Mom loved it. "
 "Great idea, and very professional and funny!"
 msgstr ""
+"Dobio sam video izuzetno brzo sa visokim kvalitetom rada. Mama ga je "
+"obožavala. Odlična ideja, vrlo profesionalno i smešno!"
 
 #: lander/views.py:74
 msgid ""
-"Got mine in less than 22 hrs i love you guys!!! Will order more funny videos "
-"for our friends!"
+"Got mine in less than 22 hrs i love you guys!!! Will order more funny videos"
+" for our friends!"
 msgstr ""
+"Dobio sam svoj za manje od 22 sata, volim vas!!! Naručićemo više smešnih "
+"videa za naše prijatelje!"
 
 #: lander/views.py:88
 msgid "Perfect gift! Keep up with the good work guys!"
-msgstr ""
+msgstr "Savršen poklon! Nastavite sa dobrim radom momci!"
 
 #: lander/views.py:102
 msgid ""
-"Love it, got my video after one day of ordering. Definitely will order again "
-"😀"
+"Love it, got my video after one day of ordering. Definitely will order again"
+" 😀"
 msgstr ""
+"Obožavam to, dobila sam svoj video dan nakon što sam naručila. Definitivno "
+"ću ponovo naručiti 😀"
 
 #: lander/views.py:116
 msgid ""
-"THANK YOU SO MUCH. I love my video- I can't wait to show it to my mum. These "
-"guys are so energetic and my video was made so quickly! AMAZING"
+"THANK YOU SO MUCH. I love my video- I can't wait to show it to my mum. These"
+" guys are so energetic and my video was made so quickly! AMAZING"
 msgstr ""
+"HVALA VAM PUNO. Volim svoj video - jedva čekam da ga pokažem mami. Ovi momci"
+" su tako energični i moj video je napravljen tako brzo! NEVEROVATNO"
 
 #: lander/views.py:130
 msgid ""
 "Wow, amazed at the quality, such a wonderful present for someone's "
 "graduation, will definitely order again."
 msgstr ""
+"Wow, oduševljen sam kvalitetom, takav divan poklon za nečiju diplomu, "
+"sigurno ću ponovo naručiti."
 
 #: lander/views.py:144
 msgid ""
 "Thank you guys, this is so-so good! Extraordinary performance and delivery "
 "from your side! Keep up the good work!"
 msgstr ""
+"Hvala vam momci, ovo je tako dobro! Izvanredno izvođenje i isporuka sa vaše "
+"strane! Nastavite sa dobrim radom!"
 
 #: lander/views.py:158
 msgid ""
 "Perfect !!! Great performance, super funny. Done super fast in 1 day,Thank "
-"you girls so much! My grandad loved it, he said it was very sweet and he was "
-"so happy!"
+"you girls so much! My grandad loved it, he said it was very sweet and he was"
+" so happy!"
 msgstr ""
+"Savršeno!!! Odlično izvođenje, veoma smešno. Završeno veoma brzo za 1 dan, "
+"Hvala vam devojke puno! Moj deda je oduševljen, rekao je da je veoma slatko "
+"i da je bio veoma srećan!"
 
 #: lander/views.py:172
 msgid ""
-"They are amazing, my partner is watching the video from them everyday. Thank "
-"you"
+"They are amazing, my partner is watching the video from them everyday. Thank"
+" you"
 msgstr ""
+"Oni su neverovatni, moj partner svakodnevno gleda video od njih. Hvala"
 
 #: lander/views.py:186
 msgid ""
 "Love the video! Super satisfied with the humor and the creativity of the "
 "video. I highly recommend them."
 msgstr ""
+"Obožavam video! Veoma sam zadovoljan/na humorom i kreativnošću videa. Toplo "
+"ih preporučujem."
 
 #: lander/views.py:200
 msgid ""
 "Very professional and amazing! Thanks for the laugh and love guys! Keep "
 "spreading joy!"
 msgstr ""
+"Veoma profesionalno i neverovatno! Hvala na smehu i ljubavi, drugari! "
+"Nastavite da širite radost!"
 
 #: lander/views.py:214
 msgid ""
 "I picked the love team, and it was very very lovely and fun. Delivery was "
 "less than 24 hours. I am fully satisfied with the result!"
 msgstr ""
+"Izabrao/la sam tim ljubavi, i bio je veoma veoma divan i zabavan. Isporuka "
+"je bila manje od 24 sata. Potpuno sam zadovoljan/na rezultatom!"
 
 #: lander/views.py:228
 msgid ""
 "Amazing and very quickly sent out to me even without paying for the rush. "
 "Great quality. Very funny. Thanks so much :)"
 msgstr ""
+"Neverovatno i veoma brzo poslato meni čak i bez plaćanja za žurbu. Odličan "
+"kvalitet. Veoma smešno. Hvala puno :)"
 
 #: lander/views.py:242
 msgid ""
 "Order came a day after ordering, very happy with the result and my brother "
 "enjoyed it."
 msgstr ""
+"Porudžbina je stigla dan nakon naručivanja, veoma sam zadovoljan/na "
+"rezultatom, a i moj brat je uživao."
 
 #: lander/views.py:256
 msgid ""
 "This was so fun! We loved it. I wanna order a thousand more! Great idea and "
 "so much happiness!"
 msgstr ""
+"Ovo je bilo tako zabavno! Obožavali smo to. Želim da naručim još hiljadu! "
+"Odlična ideja i toliko sreće!"
 
 #: lander/views.py:270
 msgid "Thanks for the best birthday video. I feel so happy"
-msgstr ""
+msgstr "Hvala na najboljem rođendanskom videu. Osećam se veoma srećno."
 
 #: lander/views.py:284
 msgid ""
@@ -410,72 +499,76 @@ msgid ""
 "greeting. I'm very happy with the result. Thank you so much. All the best, "
 "Luka"
 msgstr ""
+"Postavio sam narudžbinu 15. marta i već sledećeg dana dobio sam svoj video "
+"pozdrav. Veoma sam zadovoljan rezultatom. Hvala puno. Sve najbolje, Luka"
 
 #: lander/views.py:299
 msgid "Birthday"
-msgstr ""
+msgstr "Rođendan"
 
 #: lander/views.py:311
 msgid "Mother's Day"
-msgstr ""
+msgstr "Дана мајка"
 
 #: lander/views.py:323
 msgid "Graduation"
-msgstr ""
+msgstr "Diploma"
 
 #: lander/views.py:335
 msgid "Father's Day"
-msgstr ""
+msgstr "Dan očeva"
 
 #: lander/views.py:347
 msgid "New Car"
-msgstr ""
+msgstr "Novi automobil"
 
 #: lander/views.py:359
 msgid "Newborn Baby"
-msgstr ""
+msgstr "Novorođena beba"
 
 #: lander/views.py:371
 msgid "New House"
-msgstr ""
+msgstr "Nova kuća"
 
 #: lander/views.py:383
 msgid "Christmas"
-msgstr ""
+msgstr "Božić"
 
 #: lander/views.py:395
 msgid "Easter"
-msgstr ""
+msgstr "Uskrs"
 
 #: lander/views.py:407
 msgid "Ramadan"
-msgstr ""
+msgstr "Рамазан"
 
 #: lander/views.py:419
 msgid "Anniversary"
-msgstr ""
+msgstr "Godišnjica"
 
 #: lander/views.py:431
 msgid "Car License"
-msgstr ""
+msgstr "Registracija automobila"
 
 #: lander/views.py:443
 msgid "Retirement"
-msgstr ""
+msgstr "Penzija"
 
 #: lander/views.py:455
 msgid "Work Promotion"
-msgstr ""
+msgstr "Unapređenje na poslu"
 
 #: lander/views.py:467
 msgid "Your Choice"
-msgstr ""
+msgstr "Vaš izbor"
 
 #: payments/templates/payments/checkout.html:7
 msgid ""
 "Complete Your\n"
 "            Order "
 msgstr ""
+"Završite Vašu\n"
+"            Porudžbinu"
 
 #: payments/templates/payments/checkout.html:22
 #, python-format
@@ -483,6 +576,8 @@ msgid ""
 "\n"
 "                            %(name)s"
 msgstr ""
+"\n"
+"%(name)s"
 
 #: payments/templates/payments/checkout.html:25
 #, python-format
@@ -490,10 +585,12 @@ msgid ""
 "\n"
 "                            %(description)s"
 msgstr ""
+"\n"
+"%(description)s"
 
 #: payments/templates/payments/checkout.html:29
 msgid "Base price"
-msgstr ""
+msgstr "Osnovna cena"
 
 #: payments/templates/payments/checkout.html:51
 #, python-format
@@ -503,202 +600,225 @@ msgid ""
 "                    data-product-description=\"%(description)s\"\n"
 "                        "
 msgstr ""
+"\n"
+"data-product-name=\"%(product.emoji)s %(name)s\"\n"
+"                    data-product-description=\"%(description)s\""
 
 #: payments/templates/payments/checkout.html:95
 msgid "Delivery Email"
-msgstr ""
+msgstr "Email dostave"
 
 #: payments/templates/payments/checkout.html:101
 msgid ""
 "Your video will be delivered to this email\n"
 "                    address"
-msgstr ""
+msgstr "Vaš video će biti dostavljen na ovu email adresu"
 
 #: payments/templates/payments/checkout.html:110
 msgid "Message to say"
-msgstr ""
+msgstr "Poruka za reći"
 
 #: payments/templates/payments/checkout.html:117
 msgid ""
 "Message to\n"
 "                            say"
-msgstr ""
+msgstr "Poruka za reći"
 
 #: payments/templates/payments/checkout.html:119
 msgid ""
 "Text you want us to\n"
 "                                say"
 msgstr ""
+"Tekst koji želite da\n"
+"                                kažemo"
 
 #: payments/templates/payments/checkout.html:122
 msgid ""
 "\n"
 "                            Included"
 msgstr ""
+"\n"
+"Uključeno"
 
 #: payments/templates/payments/checkout.html:126
 msgid "Happy birthday Alex"
-msgstr ""
+msgstr "Srećan rođendan Aleksandre"
 
 #: payments/templates/payments/checkout.html:134
 msgid "Song of choice"
-msgstr ""
+msgstr "Pesma po izboru"
 
 #: payments/templates/payments/checkout.html:135
 msgid "Add your preferred song"
-msgstr ""
+msgstr "Dodajte svoju omiljenu pesmu"
 
 #: payments/templates/payments/checkout.html:142
 msgid ""
 "Song of\n"
 "                                choice"
 msgstr ""
+"Pesma po\n"
+"                                izboru"
 
 #: payments/templates/payments/checkout.html:144
 msgid ""
 "Add your preferred\n"
 "                                song"
-msgstr ""
+msgstr "Dodajte svoju omiljenu pesmu"
 
 #: payments/templates/payments/checkout.html:159
 msgid "Attach photo to be shown in the video"
-msgstr ""
+msgstr "Priložite fotografiju koja će biti prikazana u videu"
 
 #: payments/templates/payments/checkout.html:166
 msgid ""
 "Photo in\n"
 "                                video"
 msgstr ""
+"Fotografija u\n"
+"                                videu"
 
 #: payments/templates/payments/checkout.html:168
 msgid ""
 "Attach photo to be shown in the\n"
 "                                video"
-msgstr ""
+msgstr "Priložite fotografiju koja će biti prikazana u videu"
 
 #: payments/templates/payments/checkout.html:182
 msgid "Kiss photo in video"
-msgstr ""
+msgstr "Poljubac fotografije u videu"
 
 #: payments/templates/payments/checkout.html:183
 msgid "Include a kiss photo in the video"
-msgstr ""
+msgstr "Uključite fotografiju poljupca u video snimak"
 
 #: payments/templates/payments/checkout.html:190
 msgid ""
 "Kiss photo in\n"
 "                                video"
 msgstr ""
+"Poljubac fotografija u\n"
+"                                videu"
 
 #: payments/templates/payments/checkout.html:192
 msgid ""
 "Include a kiss photo in the\n"
 "                                video"
-msgstr ""
+msgstr "Uključite fotografiju poljupca u video snimak."
 
 #: payments/templates/payments/checkout.html:203
 msgid "Additional message"
-msgstr ""
+msgstr "Dodatna poruka"
 
 #: payments/templates/payments/checkout.html:204
 msgid "Add extra text in the video"
-msgstr ""
+msgstr "Dodajte dodatni tekst u videu"
 
 #: payments/templates/payments/checkout.html:211
 msgid ""
 "Additional\n"
 "                                message"
 msgstr ""
+"Dodatna\n"
+"                                poruka"
 
 #: payments/templates/payments/checkout.html:213
 msgid ""
 "Add extra text in the\n"
 "                                video"
-msgstr ""
+msgstr "Dodajte dodatni tekst u video snimak"
 
 #: payments/templates/payments/checkout.html:220
 msgid "Nice Alek you finally got a girlfriend"
-msgstr ""
+msgstr "Lepo, Alek, konačno si dobio devojku."
 
 #: payments/templates/payments/checkout.html:229
 msgid "Express delivery"
-msgstr ""
+msgstr "Brza dostava"
 
 #: payments/templates/payments/checkout.html:230
 msgid "Delivery under 8 hours"
-msgstr ""
+msgstr "Isporuka u roku od 8 sati"
 
 #: payments/templates/payments/checkout.html:237
 msgid ""
 "Express\n"
 "                                delivery"
 msgstr ""
+"Brza\n"
+"                                dostava"
 
 #: payments/templates/payments/checkout.html:239
 msgid ""
 "Delivery under 8\n"
 "                                hours"
-msgstr ""
+msgstr "Isporuka za manje od 8 sati"
 
 #: payments/templates/payments/checkout.html:250
 msgid "Reels format"
-msgstr ""
+msgstr "Format traka"
 
 #: payments/templates/payments/checkout.html:251
 msgid "Video filmed in reels format"
-msgstr ""
+msgstr "Video snimljen u formatu rolni"
 
 #: payments/templates/payments/checkout.html:258
 msgid ""
 "Reels\n"
 "                                format"
 msgstr ""
+"Koturne\n"
+"                                format"
 
 #: payments/templates/payments/checkout.html:260
 msgid ""
 "Video filmed in reels\n"
 "                                format"
-msgstr ""
+msgstr "Video snimljen u formatu Reels"
 
 #: payments/templates/payments/checkout.html:271
 msgid "Horizontal format"
-msgstr ""
+msgstr "Horizontalni format"
 
 #: payments/templates/payments/checkout.html:272
 msgid "Video filmed in horizontal format"
-msgstr ""
+msgstr "Video snimljen u horizontalnom formatu"
 
 #: payments/templates/payments/checkout.html:279
 msgid ""
 "Horizontal\n"
 "                                format"
 msgstr ""
+"Horizontalni\n"
+"                                format"
 
 #: payments/templates/payments/checkout.html:281
 msgid ""
 "Video filmed in horizontal\n"
 "                                format"
-msgstr ""
+msgstr "Video snimljen u horizontalnom formatu"
 
 #: payments/templates/payments/checkout.html:292
 msgid "Professional editing"
-msgstr ""
+msgstr "Profesionalno uređivanje"
 
 #: payments/templates/payments/checkout.html:293
 msgid "Special edit from our professional video editor"
-msgstr ""
+msgstr "Poseban edit od našeg profesionalnog video editora"
 
 #: payments/templates/payments/checkout.html:300
 msgid ""
 "Professional\n"
 "                                editing"
 msgstr ""
+"Profesionalno\n"
+"                                uređivanje"
 
 #: payments/templates/payments/checkout.html:302
 msgid ""
 "Special edit from our professional\n"
 "                                video editor"
-msgstr ""
+msgstr "Poseban edit od našeg profesionalnog video urednika"
 
 #: payments/templates/payments/checkout.html:320
 #, python-format
@@ -706,29 +826,35 @@ msgid ""
 "\n"
 "                            %(chosen_product.emoji)s %(name)s"
 msgstr ""
+"\n"
+"%(chosen_product.emoji)s %(name)s"
 
 #: payments/templates/payments/checkout.html:326
 msgid ""
 "Message to\n"
 "                        say"
-msgstr ""
+msgstr "Poruka za reći"
 
 #: payments/templates/payments/checkout.html:336
 msgid ""
 "\n"
 "                    Total"
 msgstr ""
+"\n"
+"Ukupno"
 
 #: payments/templates/payments/checkout.html:352
 msgid "Pay"
-msgstr ""
+msgstr "Plaćanje"
 
 #: payments/templates/payments/checkout.html:362
 msgid ""
 "How to\n"
 "                Order"
 msgstr ""
+"Kako da\n"
+"                Poručite"
 
 #: payments/templates/payments/checkout.html:370
 msgid "Your browser does not support the video tag."
-msgstr ""
+msgstr "Vaš pretraživač ne podržava oznaku za video."
