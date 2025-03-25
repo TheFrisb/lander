@@ -3,7 +3,7 @@
 {% block content %}
     <div data-v-02a1a2fa="" class="h-[58px] sm:h-[64px]"></div>
     <section class="w-full">
-        <div class="w-full bg-gradient-to-b from-primary/5 to-transparent px-4 py-12 sm:py-20">
+        <div class="w-full bg-gradient-to-b from-primary/5 to-transparent px-4 pb-8 pt-12 sm:py-20">
             <div class="max-w-4xl mx-auto text-center">
                 <span class="inline-block mb-4 text-sm font-medium tracking-wider text-primary uppercase">🎊
                     {% trans 'Premium Celebration Services' %} 🎊</span>
@@ -93,8 +93,8 @@
             </div>
         </div>
     </section>
-    <section class="max-w-6xl mx-auto px-4 py-8">
-        <div class="flex flex-col md:flex-row md:items-center md:space-x-12 space-y-3 md:space-y-0">
+    <section class="max-w-6xl mx-auto px-4 py-4">
+        <div class="flex flex-col md:flex-row md:items-center md:space-x-12 space-y-2 md:space-y-0">
             <!-- Language Feature -->
             <div class="flex items-center space-x-3">
                 <div class="flex-shrink-0">
@@ -139,9 +139,9 @@
         </div>
         <!-- Celebrations Dialog --><!--v-if-->
     </section>
-    <div class="w-full h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-4"></div>
+    <div class="w-full h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-2"></div>
     <section class="max-w-6xl mx-auto px-4 pb-4 relative">
-        <div class="text-center mb-6">
+        <div class="text-center mb-4">
             <h2 class="text-xl font-bold mb-1 text-black">{% blocktranslate %}Choose Your Perfect
                 Team{% endblocktranslate %}</h2>
             <p class="text-gray-600 max-w-xl mx-auto text-sm">{% blocktranslate %}Select from our expert celebration
@@ -229,6 +229,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     {% blocktranslate with description=product.description %}{{ description }}{% endblocktranslate %}"
                             data-product-regular-price="{{ product.regular_price }}"
                             data-product-sale-price="{{ product.discount_price }}"
@@ -263,7 +279,7 @@
                     {% endfor %}
                 </ul>
             </div>
-            <div class="mt-6 text-center">
+            <div class="mt-4 text-center">
                 <a href="{% url 'payments:checkout' product_id=chosen_product.pk %}"
                    class="relative w-full bg-black text-white py-4 rounded-lg hover:bg-black/90 transition-all font-medium group shadow-lg hover:shadow-black/25 hover:-translate-y-0.5 flex items-center justify-center"
                    id="goToCheckoutButton">
@@ -329,7 +345,7 @@
             </div>
             <!-- Testimonials Carousel -->
             <div
-                    class="swiper testimonialSwiper">
+                    class="swiper testimonialSwiper h-auto">
                 <div class="swiper-wrapper">
                     {% for testimonial in testimonials %}
                         <div class="swiper-slide select-none p-4"
@@ -443,7 +459,7 @@
         </div>
     </section>
 
-    <div class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 hidden"
+    <div class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 hidden overflow-y-auto"
          id="celebrationModalWithOverlay">
         <div class="bg-white rounded-2xl p-8 max-w-lg w-full mx-4 shadow-xl" id="celebrationModal">
             <div class="flex justify-between items-center mb-6">
@@ -462,7 +478,7 @@
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {% for celebration in celebration_types %}
                     <div class="relative group cursor-pointer celebrationType">
-                        <div class="relative p-4 text-center bg-orange-50 rounded-xl hover:shadow-md transition-all hover:-translate-y-0.5 border border-orange-200">
+                        <div class="relative p-2 text-xs text-center bg-orange-50 rounded-xl hover:shadow-md transition-all hover:-translate-y-0.5 border border-orange-200">
                             <span class="font-medium text-orange-700">{% blocktranslate with name=celebration.name %}
                                 {{ name }}{% endblocktranslate %}</span></div>
                     </div>

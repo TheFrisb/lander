@@ -13,6 +13,7 @@ function initTestimonialSliders() {
     loop: true,
     speed: 500,
     grabCursor: true,
+    autoHeight: true,
 
     navigation: {
       nextEl: ".swiper-button-next",

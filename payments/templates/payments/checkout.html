@@ -9,7 +9,7 @@
     </div>
 
     <!-- Selected Team -->
-    <div class="max-w-3xl mx-auto mb-8 relative">
+    <div class="max-w-3xl mx-auto mb-4 relative">
         <button class="triggerDropdownButton bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl p-6 shadow-md border-2 border-secondary w-full relative "
                 id="checkoutProductDropdownButton">
             <video src="{{ chosen_product.video.url }}" autoplay="" muted="" playsinline=""
@@ -84,9 +84,9 @@
             {% endfor %}
         </ul>
     </div>
-    <div class="max-w-3xl mx-auto mb-8">
+    <div class="max-w-3xl mx-auto mb-4">
         <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-100">
-            <h2 class="text-xl font-semibold text-text-dark mb-4 flex items-center gap-2">
+            <h2 class="text-lg font-semibold text-text-dark mb-1 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -101,216 +101,227 @@
                 <p class="text-sm text-gray-500">{% blocktranslate %}Your video will be delivered to this email
                     address{% endblocktranslate %}</p>
             </div>
+            <div class="mt-2">
+                <div class="flex items-start gap-4 checkoutOption" data-price="0"
+                     data-title="{% blocktranslate %}Message to say{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="message" checked="" disabled=""
+                                               class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary checkoutOption__checkbox"/>
+                    </div>
+                    <div class="flex-1 ">
+                        <label for="message" class="flex items-center justify-between cursor-pointer">
+                            <div>
+                        <span class="font-medium text-text-dark">{% blocktranslate %}Message to
+                            say{% endblocktranslate %}</span>
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Text you want us to
+                                    say{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">{% blocktranslate %}
+                                Included{% endblocktranslate %}</span>
+                        </label>
+                        <div class="my-1.5">
+                            <input type="text"
+                                   placeholder="{% blocktranslate %}Happy birthday Alex{% endblocktranslate %}"
+                                   class=" checkoutOption__input w-full px-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Additional Options -->
     <div class="max-w-3xl mx-auto space-y-0 bg-white rounded-xl p-3 shadow-sm border border-gray-100">
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="0"
-                 data-title="{% blocktranslate %}Message to say{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="message" checked="" disabled=""
-                                           class="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary checkoutOption__checkbox"/>
-                </div>
-                <div class="flex-1 ">
-                    <label for="message" class="flex items-center justify-between cursor-pointer">
-                        <div>
-                        <span class="font-medium text-text-dark">{% blocktranslate %}Message to
-                            say{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Text you want us to
-                                say{% endblocktranslate %}</p>
-                        </div>
-                        <span class="text-sm font-medium text-primary">{% blocktranslate %}
-                            Included{% endblocktranslate %}</span>
-                    </label>
-                    <div class="my-1.5">
-                        <input type="text" placeholder="{% blocktranslate %}Happy birthday Alex{% endblocktranslate %}"
-                               class=" checkoutOption__input w-full px-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"/>
-                    </div>
-                </div>
-            </div>
+        <div class="flex items-center justify-between p-3" id="checkoutDropdown">
+            <p class="text-primary">Extra options</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="transition-all duration-100">
+                <path d="m6 9 6 6 6-6"/>
+            </svg>
         </div>
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="5.99"
-                 data-title="{% blocktranslate %}Song of choice{% endblocktranslate %}"
-                 data-subtitle="{% blocktranslate %}Add your preferred song{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="song"
-                                           class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
-                </div>
-                <div class="flex-1">
-                    <label for="song" class="flex items-center justify-between cursor-pointer">
-                        <div>
+        <div class="hidden">
+            <div class="">
+                <div class="flex items-start gap-4 checkoutOption" data-price="5.99"
+                     data-title="{% blocktranslate %}Song of choice{% endblocktranslate %}"
+                     data-subtitle="{% blocktranslate %}Add your preferred song{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="song"
+                                               class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
+                    </div>
+                    <div class="flex-1">
+                        <label for="song" class="flex items-center justify-between cursor-pointer">
+                            <div>
                             <span class="font-medium text-text-dark">{% blocktranslate %}Song of
                                 choice{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Add your preferred
-                                song{% endblocktranslate %}</p>
-                        </div>
-                        <span class="text-sm font-medium text-primary">$5.99</span>
-                    </label>
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Add your preferred
+                                    song{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">$5.99</span>
+                        </label>
 
-                    <div class="my-1.5 hidden">
-                        <input type="text" placeholder="Waka Waka"
-                               class="w-full px-4 py-2 rounded-lg border checkoutOption__input border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
+                        <div class="my-1.5 hidden">
+                            <input type="text" placeholder="Waka Waka"
+                                   class="w-full px-4 py-2 rounded-lg border checkoutOption__input border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="9.99" data-title="Photo in video"
-                 data-subtitle="{% blocktranslate %}Attach photo to be shown in the video{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="photo"
-                                           class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
-                </div>
-                <div class="flex-1">
-                    <label for="photo" class="flex items-center justify-between cursor-pointer">
-                        <div>
+            <div class="">
+                <div class="flex items-start gap-4 checkoutOption" data-price="9.99" data-title="Photo in video"
+                     data-subtitle="{% blocktranslate %}Attach photo to be shown in the video{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="photo"
+                                               class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
+                    </div>
+                    <div class="flex-1">
+                        <label for="photo" class="flex items-center justify-between cursor-pointer">
+                            <div>
                             <span class="font-medium text-text-dark">{% blocktranslate %}Photo in
                                 video{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Attach photo to be shown in the
-                                video{% endblocktranslate %}</p>
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Attach photo to be shown in the
+                                    video{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">€9.99</span>
+                        </label>
+                        <div class="my-1.5 hidden">
+                            <input type="file" accept="image/*"
+                                   class="w-full px-4 py-2 rounded-lg border checkoutOption__input border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
                         </div>
-                        <span class="text-sm font-medium text-primary">€9.99</span>
-                    </label>
-                    <div class="my-1.5 hidden">
-                        <input type="file" accept="image/*"
-                               class="w-full px-4 py-2 rounded-lg border checkoutOption__input border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="3.99"
-                 data-title="{% blocktranslate %}Kiss photo in video{% endblocktranslate %}"
-                 data-subtitle="{% blocktranslate %}Include a kiss photo in the video{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="kiss"
-                                           class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
-                </div>
-                <div class="flex-1">
-                    <label for="kiss" class="flex items-center justify-between cursor-pointer">
-                        <div>
+            <div class="">
+                <div class="flex items-start gap-4 checkoutOption" data-price="3.99"
+                     data-title="{% blocktranslate %}Kiss photo in video{% endblocktranslate %}"
+                     data-subtitle="{% blocktranslate %}Include a kiss photo in the video{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="kiss"
+                                               class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
+                    </div>
+                    <div class="flex-1">
+                        <label for="kiss" class="flex items-center justify-between cursor-pointer">
+                            <div>
                             <span class="font-medium text-text-dark">{% blocktranslate %}Kiss photo in
                                 video{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Include a kiss photo in the
-                                video{% endblocktranslate %}</p>
-                        </div>
-                        <span class="text-sm font-medium text-primary">€3.99</span>
-                    </label>
-                    <!--v-if-->
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Include a kiss photo in the
+                                    video{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">€3.99</span>
+                        </label>
+                        <!--v-if-->
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="7.99"
-                 data-title="{% blocktranslate %}Additional message{% endblocktranslate %}"
-                 data-subtitle="{% blocktranslate %}Add extra text in the video{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="extraText"
-                                           class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
-                </div>
-                <div class="flex-1">
-                    <label for="extraText" class="flex items-center justify-between cursor-pointer">
-                        <div>
+            <div class="">
+                <div class="flex items-start gap-4 checkoutOption" data-price="7.99"
+                     data-title="{% blocktranslate %}Additional message{% endblocktranslate %}"
+                     data-subtitle="{% blocktranslate %}Add extra text in the video{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="extraText"
+                                               class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
+                    </div>
+                    <div class="flex-1">
+                        <label for="extraText" class="flex items-center justify-between cursor-pointer">
+                            <div>
                             <span class="font-medium text-text-dark">{% blocktranslate %}Additional
                                 message{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Add extra text in the
-                                video{% endblocktranslate %}</p>
-                        </div>
-                        <span class="text-sm font-medium text-primary">€7.99</span>
-                    </label>
-                    <div class="my-1.5 hidden">
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Add extra text in the
+                                    video{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">€7.99</span>
+                        </label>
+                        <div class="my-1.5 hidden">
                         <textarea
                                 placeholder="{% blocktranslate %}Nice Alek you finally got a girlfriend{% endblocktranslate %}"
                                 rows="3"
                                 class="w-full px-4 py-2 rounded-lg border checkoutOption__input border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"></textarea>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="6.99"
-                 data-title="{% blocktranslate %}Express delivery{% endblocktranslate %}"
-                 data-subtitle="{% blocktranslate %}Delivery under 8 hours{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="express"
-                                           class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
-                </div>
-                <div class="flex-1">
-                    <label for="express" class="flex items-center justify-between cursor-pointer">
-                        <div>
+            <div class="">
+                <div class="flex items-start gap-4 checkoutOption" data-price="6.99"
+                     data-title="{% blocktranslate %}Express delivery{% endblocktranslate %}"
+                     data-subtitle="{% blocktranslate %}Delivery under 8 hours{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="express"
+                                               class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
+                    </div>
+                    <div class="flex-1">
+                        <label for="express" class="flex items-center justify-between cursor-pointer">
+                            <div>
                             <span class="font-medium text-text-dark">{% blocktranslate %}Express
                                 delivery{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Delivery under 8
-                                hours{% endblocktranslate %}</p>
-                        </div>
-                        <span class="text-sm font-medium text-primary">€6.99</span>
-                    </label>
-                    <!--v-if-->
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Delivery under 8
+                                    hours{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">€6.99</span>
+                        </label>
+                        <!--v-if-->
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="9.99"
-                 data-title="{% blocktranslate %}Reels format{% endblocktranslate %}"
-                 data-subtitle="{% blocktranslate %}Video filmed in reels format{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="reels"
-                                           class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
-                </div>
-                <div class="flex-1">
-                    <label for="reels" class="flex items-center justify-between cursor-pointer">
-                        <div>
+            <div class="">
+                <div class="flex items-start gap-4 checkoutOption" data-price="9.99"
+                     data-title="{% blocktranslate %}Reels format{% endblocktranslate %}"
+                     data-subtitle="{% blocktranslate %}Video filmed in reels format{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="reels"
+                                               class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
+                    </div>
+                    <div class="flex-1">
+                        <label for="reels" class="flex items-center justify-between cursor-pointer">
+                            <div>
                             <span class="font-medium text-text-dark">{% blocktranslate %}Reels
                                 format{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Video filmed in reels
-                                format{% endblocktranslate %}</p>
-                        </div>
-                        <span class="text-sm font-medium text-primary">€9.99</span>
-                    </label>
-                    <!--v-if-->
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Video filmed in reels
+                                    format{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">€9.99</span>
+                        </label>
+                        <!--v-if-->
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="4.99"
-                 data-title="{% blocktranslate %}Horizontal format{% endblocktranslate %}"
-                 data-subtitle="{% blocktranslate %}Video filmed in horizontal format{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="horizontal"
-                                           class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
-                </div>
-                <div class="flex-1">
-                    <label for="horizontal" class="flex items-center justify-between cursor-pointer">
-                        <div>
+            <div class="">
+                <div class="flex items-start gap-4 checkoutOption" data-price="4.99"
+                     data-title="{% blocktranslate %}Horizontal format{% endblocktranslate %}"
+                     data-subtitle="{% blocktranslate %}Video filmed in horizontal format{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="horizontal"
+                                               class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
+                    </div>
+                    <div class="flex-1">
+                        <label for="horizontal" class="flex items-center justify-between cursor-pointer">
+                            <div>
                             <span class="font-medium text-text-dark">{% blocktranslate %}Horizontal
                                 format{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Video filmed in horizontal
-                                format{% endblocktranslate %}</p>
-                        </div>
-                        <span class="text-sm font-medium text-primary">€4.99</span>
-                    </label>
-                    <!--v-if-->
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Video filmed in horizontal
+                                    format{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">€4.99</span>
+                        </label>
+                        <!--v-if-->
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class="flex items-start gap-4 checkoutOption" data-price="7.99"
-                 data-title="{% blocktranslate %}Professional editing{% endblocktranslate %}"
-                 data-subtitle="{% blocktranslate %}Special edit from our professional video editor{% endblocktranslate %}">
-                <div class="pt-0.5"><input type="checkbox" id="professional"
-                                           class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
-                </div>
-                <div class="flex-1">
-                    <label for="professional" class="flex items-center justify-between cursor-pointer">
-                        <div>
+            <div class="">
+                <div class="flex items-start gap-4 checkoutOption" data-price="7.99"
+                     data-title="{% blocktranslate %}Professional editing{% endblocktranslate %}"
+                     data-subtitle="{% blocktranslate %}Special edit from our professional video editor{% endblocktranslate %}">
+                    <div class="pt-0.5"><input type="checkbox" id="professional"
+                                               class="w-5 h-5 rounded border-gray-300 text-primary checkoutOption__checkbox focus:ring-primary"/>
+                    </div>
+                    <div class="flex-1">
+                        <label for="professional" class="flex items-center justify-between cursor-pointer">
+                            <div>
                             <span class="font-medium text-text-dark">{% blocktranslate %}Professional
                                 editing{% endblocktranslate %}</span>
-                            <p class="text-sm text-gray-500">{% blocktranslate %}Special edit from our professional
-                                video editor{% endblocktranslate %}</p>
-                        </div>
-                        <span class="text-sm font-medium text-primary">€7.99</span>
-                    </label>
-                    <!--v-if-->
+                                <p class="text-sm text-gray-500">{% blocktranslate %}Special edit from our professional
+                                    video editor{% endblocktranslate %}</p>
+                            </div>
+                            <span class="text-sm font-medium text-primary">€7.99</span>
+                        </label>
+                        <!--v-if-->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Order Summary -->
-    <div class="max-w-3xl mx-auto mt-8">
+    <div class="max-w-3xl mx-auto mt-4">
         <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-100">
             <h3 class="text-lg font-semibold text-text-dark mb-4">Order Summary</h3>
             <div class="space-y-2" id="checkoutOrderSummary">
@@ -357,7 +368,7 @@
     </div>
 
 
-    <div class="max-w-3xl mx-auto my-12">
+    <div class="max-w-3xl mx-auto my-8">
         <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
             <h2 class="text-xl font-semibold text-text-dark mb-4">{% blocktranslate %}How to
                 Order{% endblocktranslate %}</h2>

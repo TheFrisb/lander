@@ -5,6 +5,7 @@ import initCelebrationTypes from "./celebrationTypes";
 import initTriggerDropdownButton from "./triggerDropdownButton";
 import initCheckoutOptions, { initCheckoutButton } from "./checkout";
 import { initLanguagePicker } from "./languagePicker";
+import initCheckoutDropdown from "./checkoutDropdown";
 
 document.addEventListener("DOMContentLoaded", () => {
   initVideoSlider();
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initCheckoutOptions();
   initCheckoutButton();
   initLanguagePicker();
+  initCheckoutDropdown();
 
   const mainBodyContainerEl = document.querySelector("#mainBody");
   const telegramIconEl = document.querySelector("#telegramIcon");
