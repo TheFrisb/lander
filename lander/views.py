@@ -2,6 +2,7 @@ import json
 import logging
 
 from django.http import JsonResponse
+
 # import _ from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy as _
 from django.views import View
@@ -497,7 +498,7 @@ class LanderView(TemplateView):
             Product.objects.all().order_by("discount_price").first().discount_price
         )
         context["discount_percentage"] = (
-                100 - (chosen_product.discount_price / chosen_product.regular_price) * 100
+            100 - (chosen_product.discount_price / chosen_product.regular_price) * 100
         )
 
         return context
