@@ -1,0 +1,63 @@
+{% extends "admin/change_list.html" %}
+{% block content %}
+    <div style="display: flex; flex-direction: row; justify-content: flex-start; margin-bottom: 20px; gap:60px">
+        <div>
+            <h3>Page View Statistics</h3>
+            <table border="1" style="border-collapse: collapse; padding: 5px;">
+                <tr>
+                    <th>Page Type</th>
+                    <th>Total Visits</th>
+                    <th>Unique Visits</th>
+                </tr>
+                <tr>
+                    <td>Lander</td>
+                    <td>{{ pageview_counts.total_lander }}</td>
+                    <td>{{ pageview_counts.unique_lander }}</td>
+                </tr>
+                <tr>
+                    <td>Checkout</td>
+                    <td>{{ pageview_counts.total_checkout }}</td>
+                    <td>{{ pageview_counts.unique_checkout }}</td>
+                </tr>
+                <tr>
+                    <td>Total Views</td>
+                    <td>{{ pageview_counts.total_combined }}</td>
+                    <td>{{ pageview_counts.unique_combined }}</td>
+                </tr>
+                <tr>
+                    <td>Conversion Rate</td>
+                    <td>{{ initiate_checkout_count_percentage|floatformat:2 }}%</td>
+                    <td>{{ initiate_checkout_unique_count_percentage|floatformat:2 }}%</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Click Statistics Table -->
+        <div>
+            <h3>Click Statistics</h3>
+            <table border="1" style="border-collapse: collapse; padding: 5px;">
+                <tr>
+                    <th>Click Type</th>
+                    <th>Total Clicks</th>
+                    <th>Unique Clicks</th>
+                </tr>
+                <tr>
+                    <td>Change Product</td>
+                    <td>{{ clicks_counts.total_change_product }}</td>
+                    <td>{{ clicks_counts.unique_change_product }}</td>
+                </tr>
+                <tr>
+                    <td>Video Slide</td>
+                    <td>{{ clicks_counts.total_video_slide }}</td>
+                    <td>{{ clicks_counts.unique_video_slide }}</td>
+                </tr>
+                <tr>
+                    <td>All Click Types</td>
+                    <td>{{ clicks_counts.total_combined }}</td>
+                    <td>{{ clicks_counts.unique_combined }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    {{ block.super }}
+{% endblock %}

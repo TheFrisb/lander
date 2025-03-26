@@ -1,10 +1,14 @@
 import hashlib
 import json
+import logging
 
+from django.conf import settings
 from django.http import JsonResponse
 from django.views.generic import TemplateView
 
 from lander.models import SiteSettings, Product
+
+logger = logging.getLogger(__name__)
 
 
 # Create your views here.
@@ -13,6 +17,13 @@ class CheckoutView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
+        try:
+            product = Product.objects.get(id=kwargs["product_id"])
+        except Product.DoesNotExist:
+            logger.warning(f"Product with id {kwargs['product_id']} does not exist")
+            product = Product.objects.all().order_by("order").first()
+
         context["is_checkout"] = True
         context["chosen_product"] = Product.objects.get(id=kwargs["product_id"])
         context["products"] = Product.objects.all().order_by("order")
@@ -25,6 +36,7 @@ class CheckoutView(TemplateView):
 
 
 def post_checkout_url(request):
+    logger.info("Received POST request to /checkout_url")
     if request.method != "POST":
         return JsonResponse({"error": "Invalid request method"}, status=405)
 
@@ -35,19 +47,20 @@ def post_checkout_url(request):
         total_price = data.get("total_price")
 
         if not email or not total_price:
+            logger.warning(f"Missing email or total_price in request body: {data}")
             return JsonResponse({"error": "Missing email or total_price"}, status=400)
 
         redirect_url = get_redirect_url(total_price, email)
         return JsonResponse({"redirect_url": redirect_url}, status=200)
 
     except Exception as e:
-
+        logger.error(f"Error occurred while processing payment POST request: {e}")
         return JsonResponse({"error": "Internal server error"}, status=500)
 
 
 def get_redirect_url(price, email):
-    ids = "1984"  # merchant id
-    key_shop = "6f90376a224c51b2c9d2bd4c604a31b6"  # merchant secret
+    ids = settings.MERCHANT_ID
+    key_shop = settings.MERCHANT_SECRET
     summ = price
     us_id = "10000293"  # payment id
     user_code = email
@@ -58,11 +71,7 @@ def get_redirect_url(price, email):
         f"{ids}:{summ}:{key_shop}:{paysys}:{us_id}".encode()
     ).hexdigest()
 
-    print(f"Produced hash: {hashed_hash}")
-
-    base_url = "https://kassify.com/sci/"
+    base_url = settings.MERCHANT_BASE_URL
     produced_url = f"{base_url}?ids={ids}&summ={summ}&us_id={us_id}&user_code={user_code}&paysys={paysys}&s={hashed_hash}"
-
-    print(f"Produced url: {produced_url}")
 
     return produced_url

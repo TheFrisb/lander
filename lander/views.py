@@ -1,9 +1,16 @@
+import json
+import logging
+
 from django.http import JsonResponse
 # import _ from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy as _
+from django.views import View
 from django.views.generic import TemplateView
 
-from lander.models import Product, SiteSettings
+from backend import settings
+from lander.models import Product, SiteSettings, Event
+
+logger = logging.getLogger(__name__)
 
 testimonials = [
     {
@@ -507,3 +514,33 @@ class LanderView(TemplateView):
 
 def ok_response(request):
     return JsonResponse({"status": "ok"})
+
+
+class ClickHandlerView(View):
+    def __init__(self):
+        super().__init__()
+        self.session_key = settings.REQUEST_SESSION_ID
+
+    def post(self, request, *args, **kwargs):
+        try:
+            data = json.loads(request.body)
+            click_type = data.get("click_type")
+            if not click_type:
+                return JsonResponse({"status": "missing click_type"}, status=400)
+
+            if click_type not in [choice[0] for choice in Event.ClickType.choices]:
+                return JsonResponse({"status": "invalid click_type"}, status=400)
+
+            session_id = request.session.get(self.session_key)
+            if not session_id:
+                return JsonResponse({"status": "session ID not found"}, status=400)
+
+            Event.objects.create(
+                event_type=Event.EventType.CLICK,
+                session_id=session_id,
+                click_type=click_type,
+            )
+            return JsonResponse({"status": "success"})
+
+        except json.JSONDecodeError:
+            return JsonResponse({"status": "invalid JSON"}, status=400)

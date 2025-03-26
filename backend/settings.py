@@ -57,6 +57,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "lander.middleware.PageViewMiddleware",
 ]
 
 ROOT_URLCONF = "backend.urls"
@@ -185,3 +186,9 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+MERCHANT_ID = config("MERCHANT_ID")
+MERCHANT_SECRET = config("MERCHANT_SECRET")
+MERCHANT_BASE_URL = config("MERCHANT_BASE_URL")
+
+REQUEST_SESSION_ID = "custom_session_id"

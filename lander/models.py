@@ -45,3 +45,40 @@ class SiteSettings(SingletonModel, BaseInternalModel):
     class Meta:
         verbose_name = "Site settings"
         verbose_name_plural = "Site settings"
+
+
+class Event(BaseInternalModel):
+    class EventType(models.TextChoices):
+        PAGE_VIEW = "page_view", "Page View"
+        CLICK = "click", "Click"
+
+    class PageType(models.TextChoices):
+        LANDER = "lander", "Lander"
+        CHECKOUT = "checkout", "Checkout"
+
+    class ClickType(models.TextChoices):
+        CHANGE_PRODUCT = "change_product", "Change Product"
+        VIDEO_SLIDE = "video_slide", "Video Slide"
+
+    session_id = models.CharField(max_length=255, verbose_name="Session ID")
+    event_type = models.CharField(
+        max_length=255, choices=EventType, verbose_name="Event Type"
+    )
+    page_type = models.CharField(
+        max_length=255,
+        choices=PageType,
+        null=True,
+        blank=True,
+        verbose_name="Page Type",
+    )
+    click_type = models.CharField(
+        max_length=255,
+        choices=ClickType,
+        null=True,
+        blank=True,
+        verbose_name="Click Type",
+    )
+
+    class Meta:
+        verbose_name = "Event"
+        verbose_name_plural = "Events"

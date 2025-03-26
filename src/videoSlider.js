@@ -1,5 +1,6 @@
 import Swiper from "swiper";
 import { Navigation, Pagination, Thumbs } from "swiper/modules";
+import makeClickRequest from "./click";
 
 function initVideoSlider() {
   const videoSliderEl = document.querySelector(".videoSwiper");
@@ -37,18 +38,18 @@ function initVideoSlider() {
   });
 
   // Handle video play/pause on initialization
-  videoSlider.slides.forEach((slide) => {
-    const video = slide.querySelector("video");
-    if (video) {
-      if (slide.classList.contains("swiper-slide-active")) {
-        video.muted = false;
-        video.play();
-      } else {
-        video.pause();
-        video.muted = true;
-      }
-    }
-  });
+  // videoSlider.slides.forEach((slide) => {
+  //   const video = slide.querySelector("video");
+  //   if (video) {
+  //     if (slide.classList.contains("swiper-slide-active")) {
+  //       video.muted = false;
+  //       video.play();
+  //     } else {
+  //       video.pause();
+  //       video.muted = true;
+  //     }
+  //   }
+  // });
 
   // Handle video play/pause on slide change
   videoSlider.on("slideChange", function () {
@@ -67,6 +68,8 @@ function initVideoSlider() {
       activeVideo.play();
       activeVideo.muted = false;
     }
+
+    makeClickRequest("video_slide");
   });
 }
 

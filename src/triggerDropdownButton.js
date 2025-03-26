@@ -1,4 +1,5 @@
 import { updateCheckoutSummary } from "./checkout";
+import makeClickRequest from "./click";
 
 function initTriggerDropdownButton() {
   const button = document.querySelector(".triggerDropdownButton");
@@ -24,6 +25,10 @@ function initTriggerDropdownButton() {
 
   button.addEventListener("click", () => {
     dropdown.classList.toggle("hidden");
+
+    if (!dropdown.classList.contains("hidden")) {
+      makeClickRequest("change_product");
+    }
   });
 
   dropdownOptions.forEach((option) => {
