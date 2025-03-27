@@ -17,24 +17,25 @@ class PageViewMiddleware:
 
         session_id = request.session[self.session_key]
 
-        try:
-            resolved = resolve(request.path_info)
-            url_name = resolved.url_name
-        except:
-            url_name = None
+        if not request.user.is_authenticated:
+            try:
+                resolved = resolve(request.path_info)
+                url_name = resolved.url_name
+            except:
+                url_name = None
 
-        if url_name == "lander":
-            Event.objects.create(
-                event_type=Event.EventType.PAGE_VIEW,
-                session_id=session_id,
-                page_type=Event.PageType.LANDER,
-            )
-        elif url_name == "checkout":
-            Event.objects.create(
-                event_type=Event.EventType.PAGE_VIEW,
-                session_id=session_id,
-                page_type=Event.PageType.CHECKOUT,
-            )
+            if url_name == "lander":
+                Event.objects.create(
+                    event_type=Event.EventType.PAGE_VIEW,
+                    session_id=session_id,
+                    page_type=Event.PageType.LANDER,
+                )
+            elif url_name == "checkout":
+                Event.objects.create(
+                    event_type=Event.EventType.PAGE_VIEW,
+                    session_id=session_id,
+                    page_type=Event.PageType.CHECKOUT,
+                )
 
         response = self.get_response(request)
         return response
